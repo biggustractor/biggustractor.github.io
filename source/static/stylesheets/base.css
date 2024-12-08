@@ -29,11 +29,20 @@
 .bgte-navbar {
     width: 100%; 
     text-align: center; 
-    margin: 5px 0px 0px 0px;
+    margin: 5px 0px 5px 0px;
 }
 
 .sm-shadow {
     box-shadow:  0 0.125rem 0.25rem var(--bs-gray-800) !important;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.center {
+    margin: auto;
+    vertical-align: middle;
 }
 
 .bottom {
@@ -76,4 +85,27 @@
     object-fit: cover;
     object-position: 25% 25%;
     box-shadow:  0 0.125rem 0.25rem var(--bs-gray-800),  0 -0.125rem 0.25rem var(--bs-gray-800);
+}
+
+.section {
+    height: 70%;
+    width: 97%;
+    margin-top: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow:  0 0.125rem 0.25rem var(--bs-gray-800),  0 -0.125rem 0.25rem var(--bs-gray-800);
+}
+
+.fadeup {
+    transform: translateY(50px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.in-view.fadeup, .in-view .fadeup {
+    transform: none;
+    opacity: 1;
 }

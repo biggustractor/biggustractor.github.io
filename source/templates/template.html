@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Build Your Tractor Package!</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/base.css') }}">
+    </head>
+    <div class="bgte-navbar bgte-gray-background sticky-top sm-shadow">
+        <a>
+            <img src="{{ url_for('static', filename='logos/BGTE-Logo-Horizontal-Stroke.png') }}" style="height: 100px;">
+        </a>
+    </div>
+    <section class="bgte-gray-background">
+       {% block content %}
+       {% endblock %}
+    </section>
+</html>
