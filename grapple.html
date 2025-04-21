@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Build Your Tractor Package!</title>
+        <link rel="icon" href="static/images/favicon.ico" />
+        <link rel="stylesheet" href="static/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="static/stylesheets/base.css">
+    </head>
+    <div class="bgte-navbar bgte-gray-background sticky-top sm-shadow">
+        <a href="index.html">
+            <img src="static/logos/BGTE-Logo-Horizontal-Stroke.png" style="height: 100px;">
+        </a>
+    </div>
+    <body style="background: url('/static/images/biggustractor-bg-types.jpg')">
+        <div class="sm-section center">
+            <h1 class="white-font">Add a Grapple</h1>
+            <p class="white-font gotham">This will require the addition of a third-function hydraulic valve.</p>
+        </div>
+        <div class="break" style="margin-top: 60px;"></div>
+        <div class="body-section">
+            <div id="container" class="container col-xxl-8 px-4 py-5">
+                <script>
+                    const container = document.getElementById("container");
+                    const name = localStorage.getItem("name");
+                    
+                    if (name == "4540 4WD" || name == "4550 4WD" || name == "5145 4WD" || name == "5155 4WD" || name == "6065 Shuttle" || name == "6065 PST" || name == "6065 PST Cab" || name == "6075 PST" || name == "6075 PST Cab")
+                        {
+                            row1 = document.createElement("div");
+                            row1.className = "row flex-lg-row align-items-center g-5 py-5";
+                            col1 = document.createElement("div");
+                            col1.className = "col-lg-6";
+                            header1 = document.createElement("h1");
+                            header1.className = "white-font";
+                            header1.innerHTML = '66" Grapple';
+                            col1.appendChild(header1);
+                            description1 = document.createElement("p");
+                            description1.className = "gotham white-font";
+                            description1.innerHTML = "Double-arm grapple";
+                            col1.appendChild(description1);
+                            url1 = `stumpBucket.html`;
+                            link1 = document.createElement("a");
+                            link1.href = url1;
+                            button1 = document.createElement("button");
+                            button1.type = "button";
+                            button1.className = "btn btm-lg gotham white-font";
+                            button1.innerHTML = "Add This to My Package";
+                            link1.appendChild(button1);
+                            link1.addEventListener('click', function(){
+                                       localStorage.setItem("grapple", true);
+                                        localStorage.setItem("grapplePrice", 2499);
+                                });
+                            col1.appendChild(link1);
+                            row1.appendChild(col1);
+                            
+                            col2 = document.createElement("div");
+                            col2.className = "col-lg-6";
+                            header2 = document.createElement("h1");
+                            header2.className = "white-font";
+                            header2.innerHTML = '72" Grapple';
+                            col2.appendChild(header2);
+                            description2 = document.createElement("p");
+                            description2.className = "gotham white-font";
+                            description2.innerHTML = "Double-arm grapple";
+                            col2.appendChild(description2);
+                            url2 = `stumpBucket.html`;
+                            link2 = document.createElement("a");
+                            link2.href = url2;
+                            button2 = document.createElement("button");
+                            button2.type = "button";
+                            button2.className = "btn btm-lg gotham white-font";
+                            button2.innerHTML = "Add This to My Package";
+                            link2.appendChild(button2);
+                            link2.addEventListener('click', function(){
+                                       localStorage.setItem("grapple", true);
+                                        localStorage.setItem("grapplePrice", 2799);
+                                });
+                            col2.appendChild(link2);
+                            row1.appendChild(col2);
+                            
+                            container.appendChild(row1);
+                            
+                            rowNo = document.createElement("div");
+                            rowNo.className = "row flex-lg-row align-items-center g-5 py-5";
+                            urlNo = `stumpBucket.html`;
+                            linkNo = document.createElement("a");
+                            linkNo.className = "no-bold no-underline white-font gotham";
+                            linkNo.href = urlNo;
+                            headerNo = document.createElement("h2");
+                            headerNo.innerHTML = "No Grapple";
+                            linkNo.appendChild(headerNo);
+                            linkNo.addEventListener('click', function(){
+                                       localStorage.setItem("grapple", false);
+                                        localStorage.setItem("grapplePrice", 0);
+                                });
+                            rowNo.appendChild(linkNo);
+                            container.appendChild(rowNo);
+                        }
+                    else
+                        {
+                            row1 = document.createElement("div");
+                            row1.className = "row flex-lg-row align-items-center g-5 py-5";
+                            col1 = document.createElement("div");
+                            col1.className = "col-lg-6";
+                            header1 = document.createElement("h1");
+                            header1.className = "white-font";
+                            header1.innerHTML = '48" Grapple';
+                            col1.appendChild(header1);
+                            description1 = document.createElement("p");
+                            description1.className = "gotham white-font";
+                            description1.innerHTML = "Single-arm grapple";
+                            col1.appendChild(description1);
+                            url1 = `boxBlade.html`;
+                            link1 = document.createElement("a");
+                            link1.href = url1;
+                            button1 = document.createElement("button");
+                            button1.type = "button";
+                            button1.className = "btn btm-lg gotham white-font";
+                            button1.innerHTML = "Add This to My Package";
+                            link1.appendChild(button1);
+                            link1.addEventListener('click', function(){
+                                       localStorage.setItem("grapple", true);
+                                        localStorage.setItem("grapplePrice", 1799);
+                                        localStorage.setItem("stumpBucket", false);
+                                        localStorage.setItem("stumpBucketPrice", 0);
+                                });
+                            col1.appendChild(link1);
+                            row1.appendChild(col1);
+                            
+                            col2 = document.createElement("div");
+                            col2.className = "col-lg-6";
+                            header2 = document.createElement("h1");
+                            header2.className = "white-font";
+                            header2.innerHTML = '60" Grapple';
+                            col2.appendChild(header2);
+                            description2 = document.createElement("p");
+                            description2.className = "gotham white-font";
+                            description2.innerHTML = "Single-arm grapple";
+                            col2.appendChild(description2);
+                            url2 = `boxBlade.html`;
+                            link2 = document.createElement("a");
+                            link2.href = url2;
+                            button2 = document.createElement("button");
+                            button2.type = "button";
+                            button2.className = "btn btm-lg gotham white-font";
+                            button2.innerHTML = "Add This to My Package";
+                            link2.appendChild(button2);
+                            link2.addEventListener('click', function(){
+                                       localStorage.setItem("grapple", true);
+                                        localStorage.setItem("grapplePrice", 1999);
+                                        localStorage.setItem("stumpBucket", false);
+                                        localStorage.setItem("stumpBucketPrice", 0);
+                                });
+                            col2.appendChild(link2);
+                            row1.appendChild(col2);
+                            
+                            container.appendChild(row1);
+                            
+                            rowNo = document.createElement("div");
+                            rowNo.className = "row flex-lg-row align-items-center g-5 py-5";
+                            urlNo = `boxBlade.html`;
+                            linkNo = document.createElement("a");
+                            linkNo.className = "no-bold no-underline white-font gotham";
+                            linkNo.href = urlNo;
+                            headerNo = document.createElement("h2");
+                            headerNo.innerHTML = "No Grapple";
+                            linkNo.appendChild(headerNo);
+                            linkNo.addEventListener('click', function(){
+                                       localStorage.setItem("grapple", false);
+                                        localStorage.setItem("grapplePrice", 0);
+                                        localStorage.setItem("stumpBucket", false);
+                                        localStorage.setItem("stumpBucketPrice", 0);
+                                });
+                            rowNo.appendChild(linkNo);
+                            container.appendChild(rowNo);
+                        }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

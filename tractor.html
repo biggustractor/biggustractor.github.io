@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Build Your Tractor Package!</title>
+        <link rel="icon" href="static/images/favicon.ico" />
+        <link rel="stylesheet" href="static/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="static/stylesheets/base.css">
+    </head>
+    <div class="bgte-navbar bgte-gray-background sticky-top sm-shadow">
+        <a href="index.html">
+            <img src="static/logos/BGTE-Logo-Horizontal-Stroke.png" style="height: 100px;">
+        </a>
+    </div>
+    <body style="background: url('/static/images/biggustractor-bg-types.jpg')">
+        <div>
+        <div class="sm-section center text-center">
+            <h1 class="white-font">Pick Your Tractor</h1>
+        <div class="body-section" id="tractorSection">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1120HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1120 HST</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 20HP diesel engine, 794-pound loader lift capacity</p>
+                        <a id="1120" href= "backhoe.html" >
+                            <button type="button" class="btn btm-lg gotham white-font" >Add This to My Package</button>
+                        </a>  
+                        <script>
+                                let tractor1 = document.getElementById("1120");
+                                tractor1.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1120 HST");
+                                    localStorage.setItem("price", 19300);
+                                    localStorage.setItem("backhoePrice", 27050);
+                                    localStorage.setItem("midMowerPrice", 23850);
+                                    localStorage.setItem("backAndMid", 31600);  
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1120HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1120 HST Cab</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 20HP diesel engine, 794-pound loader lift capacity</p>
+                        <a id="1120cab" href="midmower.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor2 = document.getElementById("1120cab");
+                                tractor2.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1120 HST Cab");
+                                    localStorage.setItem("price", 25800);
+                                    localStorage.setItem("backhoe", false);
+                                    localStorage.setItem("backhoePrice", 0);
+                                    localStorage.setItem("midMowerPrice", 30350);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1123HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1123 HST</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 23HP diesel engine, 794-pound loader lift capacity</p>
+                        <a id="1123" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>  
+                        <script>
+                                let tractor3 = document.getElementById("1123");
+                                tractor3.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1123 HST");
+                                    localStorage.setItem("price", 21300);
+                                    localStorage.setItem("backhoePrice", 29050);
+                                    localStorage.setItem("midMowerPrice", 25850);
+                                    localStorage.setItem("backAndMid", 33600);
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1123HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1123 HST Cab</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 23HP diesel engine, 794-pound loader lift capacity</p>
+                        <a id="1123cab" href="midmower.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a> 
+                        <script>
+                                let tractor4 = document.getElementById("1123cab");
+                                tractor4.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1123 HST Cab");
+                                    localStorage.setItem("price", 27800);
+                                    localStorage.setItem("backhoe", false);
+                                    localStorage.setItem("backhoePrice", 0);
+                                    localStorage.setItem("midMowerPrice", 32350);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1126HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1126 HST</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 26HP diesel engine, 794-pound loader lift capacity</p>
+                        <a id="1126" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor5 = document.getElementById("1126");
+                                tractor5.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1126 HST");
+                                    localStorage.setItem("price", 23200);
+                                    localStorage.setItem("backhoePrice", 30950);
+                                    localStorage.setItem("midMowerPrice", 27750);
+                                    localStorage.setItem("backAndMid", 35500);
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1126HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1126 HST Cab</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 26HP diesel engine, 794-pound loader lift capacity</p>
+                        <a id="1126cab" href="midmower.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>  
+                        <script>
+                                let tractor6 = document.getElementById("1126cab");
+                                tractor6.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1126 HST Cab");
+                                    localStorage.setItem("price", 29700);
+                                    localStorage.setItem("backhoe", false);
+                                    localStorage.setItem("backhoePrice", 0);
+                                    localStorage.setItem("midMowerPrice", 34250);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/2123HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">2123 HST</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 23HP diesel engine, 1,760-pound loader lift capacity</p>
+                        <a id="2123" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor7 = document.getElementById("2123");
+                                tractor7.addEventListener('click', function(){
+                                    localStorage.setItem("name", "2123 HST");
+                                    localStorage.setItem("price", 25200);
+                                    localStorage.setItem("backhoePrice", 34250);
+                                    localStorage.setItem("midMowerPrice", 29750);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/2126HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">2126 HST</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 26HP diesel engine, 1,760-pound loader lift capacity</p>
+                        <a id="2126" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a> 
+                        <script>
+                                let tractor8 = document.getElementById("2126");
+                                tractor8.addEventListener('click', function(){
+                                    localStorage.setItem("name", "2126 HST");
+                                    localStorage.setItem("price", 26500);
+                                    localStorage.setItem("backhoePrice", 35550);
+                                    localStorage.setItem("midMowerPrice", 31050);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/2126HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">2126 HST Cab</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 26HP diesel engine, 1,760-pound loader lift capacity</p>
+                        <a id="2126cab" href="midmower.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor9 = document.getElementById("2126cab");
+                                tractor9.addEventListener('click', function(){
+                                    localStorage.setItem("name", "2126 HST Cab");
+                                    localStorage.setItem("price", 34300);
+                                    localStorage.setItem("backhoe", false);
+                                    localStorage.setItem("backhoePrice", 0);
+                                    localStorage.setItem("midMowerPrice", 38850);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1626S.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1626 S</h1>
+                        <p class="lead white-font gotham">Shuttle shift transmission, 4-wheel drive, 26HP diesel engine, 2,646-pound loader lift capacity</p>
+                        <a id="1626s" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a> 
+                        <script>
+                                let tractor10 = document.getElementById("1626s");
+                                tractor10.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1626 S");
+                                    localStorage.setItem("price", 27968);
+                                    localStorage.setItem("backhoePrice", 36710);
+                                    localStorage.setItem("midMowerPrice", 33771);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1626HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1626 HST</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 26HP diesel engine, 2,646-pound loader lift capacity</p>
+                        <a id="1626" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a> 
+                        <script>
+                                let tractor11 = document.getElementById("1626");
+                                tractor11.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1626 HST");
+                                    localStorage.setItem("price", 29280);
+                                    localStorage.setItem("backhoePrice", 38022);
+                                    localStorage.setItem("midMowerPrice", 35083);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1635HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1635 S</h1>
+                        <p class="lead white-font gotham">Shuttle shift transmission, 4-wheel drive, 36HP diesel engine, 2,646-pound loader lift capacity</p>
+                        <a id="1635s" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor12 = document.getElementById("1635s");
+                                tractor12.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1635 S");
+                                    localStorage.setItem("price", 31002);
+                                    localStorage.setItem("backhoePrice", 40438);
+                                    localStorage.setItem("midMowerPrice", 0);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1635HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1635 HST</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 36HP diesel engine, 2,646-pound loader lift capacity</p>
+                        <a id="1635" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor13 = document.getElementById("1635");
+                                tractor13.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1635 HST");
+                                    localStorage.setItem("price", 32596);
+                                    localStorage.setItem("backhoePrice", 42032);
+                                    localStorage.setItem("midMowerPrice", 0);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1635HSTCab.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1635 HST Cab</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 36HP diesel engine, 2,646-pound loader lift capacity</p>
+                        <a id="1635cab" href="trailer.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>  
+                        <script>
+                                let tractor14 = document.getElementById("1635cab");
+                                tractor14.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1635 HST Cab");
+                                    localStorage.setItem("price", 41280);
+                                    localStorage.setItem("backhoe", false);
+                                    localStorage.setItem("backhoePrice", 0);
+                                    localStorage.setItem("midMower", false);
+                                    localStorage.setItem("midMowerPrice", 0);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1640HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1640 S</h1>
+                        <p class="lead white-font gotham">Shuttle shift transmission, 4-wheel drive, 39HP diesel engine, 2,646-pound loader lift capacity</p>
+                        <a id="1640s" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor15 = document.getElementById("1640s");
+                                tractor15.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1640 S");
+                                    localStorage.setItem("price", 33792);
+                                    localStorage.setItem("backhoePrice", 43412);
+                                    localStorage.setItem("midMowerPrice", 39769);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1640HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1640 HST</h1>
+                        <p class="lead white-font gotham">Hydrostat transmission, 4-wheel drive, 39HP diesel engine, 2,646-pound loader lift capacity</p>
+                        <a id="1640" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a> 
+                        <script>
+                                let tractor16 = document.getElementById("1640");
+                                tractor16.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1640 HST");
+                                    localStorage.setItem("price", 35384);
+                                    localStorage.setItem("backhoePrice", 45004);
+                                    localStorage.setItem("midMowerPrice", 41361);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/1640HST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">1640 HST Cab</h1>
+                        <p class="lead white-font gotham">Shuttle shift transmission, 4-wheel drive, 39HP diesel engine, 2,646-pound loader lift capacity</p>
+                        <a id="1640cab" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor17 = document.getElementById("1640cab");
+                                tractor17.addEventListener('click', function(){
+                                    localStorage.setItem("name", "1640 HST Cab");
+                                    localStorage.setItem("price", 44467);
+                                    localStorage.setItem("backhoePrice", 54087);
+                                    localStorage.setItem("midMowerPrice", 50444);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/4540.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">4540 4WD</h1>
+                        <p class="lead white-font gotham">8F/2R gear transmission, 4-wheel drive, 41HP diesel engine, 3,527-pound loader lift capacity</p>
+                        <a id="4540" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor18 = document.getElementById("4540");
+                                tractor18.addEventListener('click', function(){
+                                    localStorage.setItem("name", "4540 4WD");
+                                    localStorage.setItem("price", 35122);
+                                    localStorage.setItem("backhoePrice", 47132);
+                                    localStorage.setItem("midMowerPrice", 0);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/4550.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">4550 4WD</h1>
+                        <p class="lead white-font gotham">8F/2R gear transmission, 4-wheel drive, 48HP diesel engine, 3,527-pound loader lift capacity</p>
+                        <a id="4550" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor19 = document.getElementById("4550");
+                                tractor19.addEventListener('click', function(){
+                                    localStorage.setItem("name", "4550 4WD");
+                                    localStorage.setItem("price", 37947);
+                                    localStorage.setItem("backhoePrice", 49957);
+                                    localStorage.setItem("midMowerPrice", 0);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/5145.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">5145 4WD</h1>
+                        <p class="lead white-font gotham">8F/2R gear transmission, 4-wheel drive, 45HP diesel engine, 3,748-pound loader lift capacity</p>
+                        <a id="5145" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>  
+                        <script>
+                                let tractor20 = document.getElementById("5145");
+                                tractor20.addEventListener('click', function(){
+                                    localStorage.setItem("name", "5145 4WD");
+                                    localStorage.setItem("price", 40517);
+                                    localStorage.setItem("backhoePrice", 52524);
+                                    localStorage.setItem("midMowerPrice", 0);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/5155.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">5155 4WD</h1>
+                        <p class="lead white-font gotham">8F/2R gear transmission, 4-wheel drive, 55HP diesel engine, 3,748-pound loader lift capacity</p>
+                        <a id="5155" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor21 = document.getElementById("5155");
+                                tractor21.addEventListener('click', function(){
+                                    localStorage.setItem("name", "5155 4WD");
+                                    localStorage.setItem("price", 45067);
+                                    localStorage.setItem("backhoePrice", 57074);
+                                    localStorage.setItem("midMowerPrice", 0);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/6065PST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">6065 Shuttle</h1>
+                        <p class="lead white-font gotham">Shuttle shift transmission, 4-wheel drive, 62HP diesel engine, 5,952-pound loader lift capacity</p>
+                        <a id="6065s" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor22 = document.getElementById("6065s");
+                                tractor22.addEventListener('click', function(){
+                                    localStorage.setItem("name", "6065 Shuttle");
+                                    localStorage.setItem("price", 47693);
+                                    localStorage.setItem("backhoePrice", 59818);
+                                    localStorage.setItem("midMowerPrice", 0);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/6065PST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">6065 PST</h1>
+                        <p class="lead white-font gotham">15F/15R power shuttle transmission, 4-wheel drive, 62HP diesel engine, 5,952-pound loader lift capacity</p>
+                        <a id="6065pst" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a> 
+                        <script>
+                                let tractor23 = document.getElementById("6065pst");
+                                tractor23.addEventListener('click', function(){
+                                    localStorage.setItem("name", "6065 PST");
+                                    localStorage.setItem("price", 51475);
+                                    localStorage.setItem("backhoePrice", 63843);
+                                    localStorage.setItem("midMowerPrice", 0);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/6065PST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">6065 PST Cab</h1>
+                        <p class="lead white-font gotham">15F/15R power shuttle transmission, 4-wheel drive, 62HP diesel engine, 5,952-pound loader lift capacity</p>
+                        <a id="6065cab" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>  
+                        <script>
+                                let tractor24 = document.getElementById("6065cab");
+                                tractor24.addEventListener('click', function(){
+                                    localStorage.setItem("name", "6065 PST Cab");
+                                    localStorage.setItem("price", 62313);
+                                    localStorage.setItem("backhoePrice", 74681);
+                                    localStorage.setItem("midMowerPrice", 0);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/6065PST.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">6075 PST</h1>
+                        <p class="lead white-font gotham">15F/15R power shuttle transmission, 4-wheel drive, 71HP diesel engine, 4,840-pound loader lift capacity</p>
+                        <a id="6075pst" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a>
+                        <script>
+                                let tractor25 = document.getElementById("6075pst");
+                                tractor25.addEventListener('click', function(){
+                                    localStorage.setItem("name", "6075 PST");
+                                    localStorage.setItem("price", 56161);
+                                    localStorage.setItem("backhoePrice", 68529);
+                                    localStorage.setItem("midMowerPrice", 0);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/images/mahindraTractors/6075PSTCab.jpg" class="tractor-image"/>
+                        <h1 class="display-5 fw-bold white-font gotham mt-lg-1">6075 PST Cab</h1>
+                        <p class="lead white-font gotham">15F/15R power shuttle transmission, 4-wheel drive, 71HP diesel engine, 4,840-pound loader lift capacity</p>
+                        <a id="6075cab" href="backhoe.html">
+                            <button type="button" class="btn btm-lg gotham white-font">Add This to My Package</button>
+                        </a> 
+                        <script>
+                                let tractor26 = document.getElementById("6075cab");
+                                tractor26.addEventListener('click', function(){
+                                    localStorage.setItem("name", "6075 PST");
+                                    localStorage.setItem("price", 67093);
+                                    localStorage.setItem("backhoePrice", 79461);
+                                    localStorage.setItem("midMowerPrice", 0);
+                                    localStorage.setItem("backAndMid", 0);
+                                });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </body>
+</html>

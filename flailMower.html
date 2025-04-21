@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Build Your Tractor Package!</title>
+        <link rel="icon" href="static/images/favicon.ico" />
+        <link rel="stylesheet" href="static/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="static/stylesheets/base.css">
+    </head>
+    <div class="bgte-navbar bgte-gray-background sticky-top sm-shadow">
+        <a href="index.html">
+            <img src="static/logos/BGTE-Logo-Horizontal-Stroke.png" style="height: 100px;">
+        </a>
+    </div>
+    <body style="background: url('/static/images/biggustractor-bg-types.jpg')">
+        <div class="sm-section center">
+            <h1 class="white-font">Add a Flail Mower</h1>
+        </div>
+        <div class="break"></div>
+        <div class="center no-background-section">
+            <h2 class="gotham">Would you like to add a flail mower?</h2>
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <a id="no" href="postHoleDigger.html" class="no-bold no-underline gotham black-font"><h2>No</h2></a>
+                        <script>
+                            no = document.getElementById("no");
+                            no.addEventListener('click', function(){
+                                localStorage.setItem("flail", false);
+                                localStorage.setItem("flailPrice", 0);
+                            });
+                        </script>
+                    </div>
+                    <div class="col-lg-6">
+                        <a id="yes" href="postHoleDigger.html" class="no-bold no-underline gotham black-font"><h2>Yes</h2></a>
+                        <script>
+                            yes = document.getElementById("yes");
+                            yes.addEventListener('click', function(){
+                                localStorage.setItem("flail", true);
+                                localStorage.setItem("flailPrice", 3999);
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

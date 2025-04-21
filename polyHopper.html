@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Build Your Tractor Package!</title>
+        <link rel="icon" href="static/images/favicon.ico" />
+        <link rel="stylesheet" href="static/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="static/stylesheets/base.css">
+    </head>
+    <div class="bgte-navbar bgte-gray-background sticky-top sm-shadow">
+        <a href="index.html">
+            <img src="static/logos/BGTE-Logo-Horizontal-Stroke.png" style="height: 100px;">
+        </a>
+    </div>
+    <body style="background: url('/static/images/biggustractor-bg-types.jpg')">
+        <div class="sm-section center">
+            <h1 class="white-font">Add a Poly Hopper Spreader</h1>
+        </div>
+        <div class="break"></div>
+        <div class="center no-background-section">
+            <h2 class="gotham">Would you like to add a poly hopper spreader?</h2>
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div id="no" class="col-lg-6">
+                        <script>
+                            const tractorName = localStorage.getItem("name");
+                            const urlFM = "finishMower.html";
+                            const urlDE = "dualEdge.html";
+                            const no = document.getElementById("no");
+                            
+                            if (tractorName=='2123 HST' || tractorName=='2126 HST' || tractorName=='2126 HST Cab')
+                                {
+                                    linkNo = document.createElement("a");
+                                    linkNo.href = urlFM;
+                                    linkNo.className = "no-bold no-underline gotham black-font";
+                                    headerNo = document.createElement("h2");
+                                    headerNo.innerHTML = "No";
+                                    linkNo.appendChild(headerNo);
+                                    linkNo.addEventListener('click', function(){
+                                        localStorage.setItem("polyHopper", false);
+                                        localStorage.setItem("polyHopperPrice", 0);
+                                        localStorage.setItem("dualEdge", false);
+                                        localStorage.setItem("dualEdgePrice", 0);
+                                    });
+                                    no.appendChild(linkNo);
+                                }
+                            else
+                                {
+                                    linkNo = document.createElement("a");
+                                    linkNo.href = urlDE;
+                                    linkNo.className = "no-bold no-underline gotham black-font";
+                                    headerNo = document.createElement("h2");
+                                    headerNo.innerHTML = "No";
+                                    linkNo.appendChild(headerNo);
+                                    linkNo.addEventListener('click', function(){
+                                        localStorage.setItem("polyHopper", false);
+                                        localStorage.setItem("polyHopperPrice", 0);
+                                    });
+                                    no.appendChild(linkNo);
+                                }
+                        </script>
+                    </div>
+                    <div id="yes" class="col-lg-6">
+                        <script>
+                            const yes = document.getElementById("yes");
+                            
+                            if (tractorName=='2123 HST' || tractorName=='2126 HST' || tractorName=='2126 HST Cab')
+                                {
+                                    linkYes = document.createElement("a");
+                                    linkYes.href = urlFM;
+                                    linkYes.className = "no-bold no-underline gotham black-font";
+                                    headerYes = document.createElement("h2");
+                                    headerYes.innerHTML = "Yes";
+                                    linkYes.appendChild(headerYes);
+                                    linkYes.addEventListener('click', function(){
+                                        localStorage.setItem("polyHopper", true);
+                                        localStorage.setItem("polyHopperPrice", 1599);
+                                        localStorage.setItem("dualEdge", false);
+                                        localStorage.setItem("dualEdgePrice", 0);
+                                    });
+                                    yes.appendChild(linkYes);
+                                }
+                            else
+                                {
+                                    linkYes = document.createElement("a");
+                                    linkYes.href = urlDE;
+                                    linkYes.className = "no-bold no-underline gotham black-font";
+                                    headerYes = document.createElement("h2");
+                                    headerYes.innerHTML = "Yes";
+                                    linkYes.appendChild(headerYes);
+                                    linkYes.addEventListener('click', function(){
+                                        localStorage.setItem("polyHopper", true);
+                                        localStorage.setItem("polyHopperPrice", 1599);
+                                    });
+                                    yes.appendChild(linkYes);
+                                }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

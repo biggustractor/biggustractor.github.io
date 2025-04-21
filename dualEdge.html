@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Build Your Tractor Package!</title>
+        <link rel="icon" href="static/images/favicon.ico" />
+        <link rel="stylesheet" href="static/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="static/stylesheets/base.css">
+    </head>
+    <div class="bgte-navbar bgte-gray-background sticky-top sm-shadow">
+        <a href="index.html">
+            <img src="static/logos/BGTE-Logo-Horizontal-Stroke.png" style="height: 100px;">
+        </a>
+    </div>
+    <body style="background: url('/static/images/biggustractor-bg-types.jpg')">
+        <div class="sm-section center">
+            <h1 class="white-font">Add a Dual Edge Grader Blade</h1>
+        </div>
+        <div class="break" style="margin-top: 60px;"></div>
+        <div class="body-section">
+            <div id="container" class="container col-xxl-8 px-4 py-5">
+                <script>
+                    const tractorName = localStorage.getItem("name");
+                    const url = "finishMower.html";
+                    const container = document.getElementById("container");
+                    
+                    if (tractorName=='1626 S' || tractorName=='1626 HST' || tractorName=='1635 S' || tractorName=='1635 HST' || tractorName=='1635 HST Cab')
+                        {
+                            row = document.createElement("div");
+                            row.className = "row flex-lg-row align-items-center g-5 py-5";
+                            header1 = document.createElement("h1");
+                            header1.className = "white-font mb-0 mt-0";
+                            header1.innerHTML = "5' Dual Edge Grader Blade";
+                            row.appendChild(header1);
+                            link1 = document.createElement("a");
+                            link1.href = url;
+                            link1.className = "mb-0 mt-4";
+                            button1 = document.createElement("button");
+                            button1.type = "button";
+                            button1.className = "btn btm-lg gotham white-font";
+                            button1.innerHTML = "Add This to My Package";
+                            link1.appendChild(button1);
+                            link1.addEventListener('click', function(){
+                                localStorage.setItem("dualEdge", true);
+                                localStorage.setItem("dualEdgePrice", 2899);
+                            });
+                            row.appendChild(link1);
+                            
+                            container.appendChild(row);
+                        }
+                    else
+                        {
+                            row = document.createElement("div");
+                            row.className = "row flex-lg-row align-items-center g-5 py-5";
+                            col1 = document.createElement("div");
+                            col1.className = "col-lg-6";
+                            header1 = document.createElement("h1");
+                            header1.className = "white-font mb-0 mt-0";
+                            header1.innerHTML = "5' Dual Edge Grader Blade";
+                            col1.appendChild(header1);
+                            link1 = document.createElement("a");
+                            link1.href = url;
+                            link1.className = "mb-0 mt-4";
+                            button1 = document.createElement("button");
+                            button1.type = "button";
+                            button1.className = "btn btm-lg gotham white-font";
+                            button1.innerHTML = "Add This to My Package";
+                            link1.appendChild(button1);
+                            link1.addEventListener('click', function(){
+                                localStorage.setItem("dualEdge", true);
+                                localStorage.setItem("dualEdgePrice", 2899);
+                            });
+                            col1.appendChild(link1);
+                            row.appendChild(col1);
+                            col2 = document.createElement("div");
+                            col2.className = "col-lg-6";
+                            header2 = document.createElement("h1");
+                            header2.className = "white-font mb-0 mt-0";
+                            header2.innerHTML = "6' Dual Edge Grader Blade";
+                            col2.appendChild(header2);
+                            link2 = document.createElement("a");
+                            link2.href = url;
+                            link2.className = "mb-0 mt-4";
+                            button2 = document.createElement("button");
+                            button2.type = "button";
+                            button2.className = "btn btm-lg gotham white-font";
+                            button2.innerHTML = "Add This to My Package";
+                            link2.appendChild(button2);
+                            link2.addEventListener('click', function(){
+                                localStorage.setItem("dualEdge", true);
+                                localStorage.setItem("dualEdgePrice", 3199);
+                            });
+                            col2.appendChild(link2);
+                            row.appendChild(col2);
+                            container.appendChild(row);
+                        }
+                </script>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <a id="no" href="finishMower.html" class="no-bold no-underline white-font gotham"><h2>No Dual Edge Grader Blade</h2></a>
+                    <script>
+                        no = document.getElementById("no");
+                        no.addEventListener('click', function(){
+                                localStorage.setItem("dualEdge", false);
+                                localStorage.setItem("dualEdgePrice", 0);
+                            });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
