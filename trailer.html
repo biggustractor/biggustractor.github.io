@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Build Your Tractor Package!</title>
+        <link rel="icon" href="static/images/favicon.ico" />
+        <link rel="stylesheet" href="static/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="static/stylesheets/base.css">
+    </head>
+    <div class="bgte-navbar bgte-gray-background sticky-top sm-shadow">
+        <a href="index.html">
+            <img src="static/logos/BGTE-Logo-Horizontal-Stroke.png" style="height: 100px;">
+        </a>
+    </div>
+    <body style="background: url('/static/images/biggustractor-bg-types.jpg')">
+        <div class="sm-section center">
+            <h1 class="white-font">Add a Trailer</h1>
+            <p class="white-font lead gotham">Some pictures may not be exact.</p>
+        </div>
+        <div class="break" style="margin-top: 60px;"></div>
+        <div class="body-section">
+            <div id="trailer" class="container col-xxl-8 px-4 py-5">
+                    <script>
+                        console.log(name);
+                        trailer = document.getElementById("trailer");
+                        
+                        if(name == "6065 Shuttle" || name == "6065 PST" || name == "6065 PST Cab" || name == "6075 PST" || name == "6075 PST Cab")
+                            {
+                                row = document.createElement("div");
+                                row.className = "row flex-lg-row align-items-center g-5 py-5";
+                                
+                                // 7 x 24
+                                col1 = document.createElement("div");
+                                col1.className = "col-lg-6";
+                                img1 = document.createElement("img");
+                                img1.src = "static/images/trailers/8.5x24.jpg";
+                                console.log(img1.src);
+                                img1.className = "tractor-image";
+                                col1.appendChild(img1);
+                                header1 = document.createElement("h1");
+                                header1.className = "display-5 fw-bold white-font gotham mt-lg-1";
+                                header1.innerHTML = "7x24 Equipment";
+                                col1.appendChild(header1);
+                                description1 = document.createElement("p");
+                                description1.className = "lead white-font gotham";
+                                description1.innerHTML = "14,000-pound capacity, tandem-axel";
+                                col1.appendChild(description1);
+                                link1 = document.createElement("a");
+                                url1 = `palletForks.html`;
+                                link1.href = url1;
+                                button1 = document.createElement("button");
+                                button1.type = "button";
+                                button1.className = "btn btm-lg gotham white-font";
+                                button1.innerHTML = "Add This to My Package";
+                                link1.appendChild(button1);
+                                link1.addEventListener('click', function(){
+                                   localStorage.setItem("trailer", true);
+                                    localStorage.setItem("trailerPrice", 8599);
+                                });
+                                col1.appendChild(link1);
+                                row.appendChild(col1);
+                                
+                                
+                                // 8.5 x 24
+                                col2 = document.createElement("div");
+                                col2.className = "col-lg-6";
+                                img2 = document.createElement("img");
+                                img2.src = "static/images/trailers/8.5x24.jpg";
+                                img2.className = "tractor-image";
+                                col2.appendChild(img2);
+                                header2 = document.createElement("h2");
+                                header2.className = "display-5 fw-bold white-font gotham mt-lg-1";
+                                header2.innerText = "8.5x24 Deckover";
+                                col2.appendChild(header2);
+                                description2 = document.createElement("p");
+                                description2.className = "lead white-font gotham";
+                                description2.innerHTML = "14,000-pound capacity, tandem-axel";
+                                col2.appendChild(description2);
+                                link2 = document.createElement("a");
+                                url2 = `palletForks.html`;
+                                link2.href = url2;
+                                button2 = document.createElement("button");
+                                button2.className = "btn btn-lg gotham white-font";
+                                button2.innerHTML = "Add This to My Package";
+                                link2.appendChild(button2);
+                                link2.addEventListener('click', function(){
+                                   localStorage.setItem("trailer", true);
+                                    localStorage.setItem("trailerPrice", 9899);
+                                });
+                                col2.appendChild(link2);
+                                row.appendChild(col2);
+                                
+                                trailer.appendChild(row);
+                            }
+                        else if (name == "4540 4WD" || name == "4550 4WD" || name == "5145 4WD" || name == "5155 4WD")
+                            {
+                                row1 = document.createElement("div");
+                                row1.className = "row flex-lg-row align-items-center g-5 py-5";
+                                
+                                // 7x22
+                                col1 = document.createElement("div");
+                                col1.className = "col-lg-6";
+                                img1 = document.createElement("img");
+                                img1.src = "static/images/trailers/7x22.jpg";
+                                img1.className = "tractor-image";
+                                col1.appendChild(img1);
+                                header1 = document.createElement("h1");
+                                header1.className = "display-5 fw-bold white-font gotham mt-lg-1";
+                                header1.innerHTML = "7x22 Equipment";
+                                col1.appendChild(header1);
+                                description1 = document.createElement("p");
+                                description1.className = "lead white-font gotham";
+                                description1.innerHTML = "10,400-pound capacity, tandem-axel";
+                                col1.appendChild(description1);
+                                url1 = `palletForks.html`;
+                                link1 = document.createElement("a");
+                                link1.href = url1;
+                                button1 = document.createElement("button");
+                                button1.type = "button";
+                                button1.className = "btn btm-lg gotham white-font";
+                                button1.innerHTML = "Add This to My Package";
+                                link1.appendChild(button1);
+                                link1.addEventListener('click', function(){
+                                   localStorage.setItem("trailer", true);
+                                    localStorage.setItem("trailerPrice", 6199);
+                                });
+                                col1.appendChild(link1);
+                                row1.appendChild(col1);
+                                
+                                // 7x24
+                                col2 = document.createElement("div");
+                                col2.className = "col-lg-6";
+                                img2 = document.createElement("img");
+                                img2.src = "static/images/trailers/8.5x24.jpg";
+                                img2.className = "tractor-image";
+                                col2.appendChild(img2);
+                                header2 = document.createElement("h1");
+                                header2.className = "display-5 fw-bold white-font gotham mt-lg-1";
+                                header2.innerHTML = "7x24 Equipment";
+                                col2.appendChild(header2);
+                                description2 = document.createElement("p");
+                                description2.className = "lead white-font gotham";
+                                description2.innerHTML = "14,000-pound capacity, tandem-axel";
+                                col2.appendChild(description2);
+                                url2 = `palletForks.html`;
+                                link2 = document.createElement("a");
+                                link2.href = url2;
+                                button2 = document.createElement("button");
+                                button2.className = "btn btm-lg gotham white-font";
+                                button2.innerHTML = "Add This to My Package";
+                                link2.appendChild(button2);
+                                link2.addEventListener('click', function(){
+                                   localStorage.setItem("trailer", true);
+                                    localStorage.setItem("trailerPrice", 8599);
+                                });
+                                col2.appendChild(link2);
+                                row1.appendChild(col2);
+                                
+                                trailer.appendChild(row1);
+                                
+                                row2 = document.createElement("div");
+                                row2.className = "row flex-lg-row align-items-center g-5 py-5";
+                                
+                                // 8.5x24 Deckover
+                                col3 = document.createElement("div");
+                                col3.className = "col-lg-6";
+                                img3 = document.createElement("img");
+                                img3.src = "static/images/trailers/8.5x24.jpg";
+                                img3.className = "tractor-image";
+                                col3.appendChild(img3);
+                                header3 = document.createElement("h1");
+                                header3.className = "display-5 fw-bold white-font gotham mt-lg-1";
+                                header3.innerHTML = "8.5x24 Deckover";
+                                col3.appendChild(header3);
+                                description3 = document.createElement("p");
+                                description3.className = "lead white-font gotham";
+                                description3.innerHTML = "14,000-pound capacity, tandem-axel";
+                                col3.appendChild(description3);
+                                url3 = `palletForks.html`;
+                                link3 = document.createElement("a");
+                                link3.href = url3;
+                                button3 = document.createElement("button");
+                                button3.type = "button";
+                                button3.className = "btn btm-lg gotham white-font";
+                                button3.innerHTML = "Add This to My Package";
+                                link3.appendChild(button3);
+                                link3.addEventListener('click', function(){
+                                   localStorage.setItem("trailer", true);
+                                    localStorage.setItem("trailerPrice", 9899);
+                                });
+                                col3.appendChild(link3);
+                                row2.appendChild(col3);
+                                
+                                trailer.appendChild(row2);
+                            }
+                        else
+                            {
+                                row1 = document.createElement("div");
+                                row1.className = "row flex-lg-row align-items-center g-5 py-5";
+                                
+                                // 7x16
+                                col1 = document.createElement("div");
+                                col1.className = "col-lg-6";
+                                img1 = document.createElement("img");
+                                img1.src = "static/images/trailers/7x20.jpg";
+                                img1.className = "tractor-image";
+                                col1.appendChild(img1);
+                                header1 = document.createElement("h1");
+                                header1.className = "display-5 fw-bold white-font gotham mt-lg-1";
+                                header1.innerHTML = "7x16 Utility";
+                                col1.appendChild(header1);
+                                description1 = document.createElement("p");
+                                description1.className = "lead white-font gotham";
+                                description1.innerHTML = "7,000-pound capacity, tandem-axel";
+                                col1.appendChild(description1);
+                                url1 = `palletForks.html`;
+                                link1 = document.createElement("a");
+                                link1.href = url1;
+                                button1 = document.createElement("button");
+                                button1.type = "button";
+                                button1.className = "btn btm-lg gotham white-font";
+                                button1.innerHTML = "Add This to My Package";
+                                link1.appendChild(button1);
+                                link1.addEventListener('click', function(){
+                                   localStorage.setItem("trailer", true);
+                                    localStorage.setItem("trailerPrice", 4299);
+                                });
+                                col1.appendChild(link1);
+                                row1.appendChild(col1);
+                                
+                                // 7x20
+                                col2 = document.createElement("div");
+                                col2.className = "col-lg-6";
+                                img2 = document.createElement("img");
+                                img2.src = "static/images/trailers/7x20.jpg";
+                                img2.className = "tractor-image";
+                                col2.appendChild(img2);
+                                header2 = document.createElement("h1");
+                                header2.className = "display-5 fw-bold white-font gotham mt-lg-1";
+                                header2.innerHTML = "7x20 Equipment";
+                                col2.appendChild(header2);
+                                description2 = document.createElement("p");
+                                description2.className = "lead white-font gotham";
+                                description2.innerHTML = "7,000-pound capacity, tandem-axel";
+                                col2.appendChild(description2);
+                                url2 = `palletForks.html`;
+                                link2 = document.createElement("a");
+                                link2.href = url2;
+                                button2 = document.createElement("button");
+                                button2.type = "button";
+                                button2.className = "btn btm-lg gotham white-font";
+                                button2.innerHTML = "Add This to My Package";
+                                link2.appendChild(button2);
+                                link2.addEventListener('click', function(){
+                                   localStorage.setItem("trailer", true);
+                                    localStorage.setItem("trailerPrice", 4899);
+                                });
+                                col2.appendChild(link2);
+                                row1.appendChild(col2);
+                                trailer.appendChild(row1);
+                                
+                                row2 = document.createElement("div");
+                                row2.className = "row flex-lg-row align-items-center g-5 py-5";
+                                
+                                // 7x22
+                                col3 = document.createElement("div");
+                                col3.className = "col-lg-6";
+                                img3 = document.createElement("img");
+                                img3.src = "static/images/trailers/7x22.jpg";
+                                img3.className = "tractor-image";
+                                col3.appendChild(img3);
+                                header3 = document.createElement("h1");
+                                header3.className = "display-5 fw-bold white-font gotham mt-lg-1";
+                                header3.innerHTML = "7x22 Equipment";
+                                col3.appendChild(header3);
+                                description3 = document.createElement("p");
+                                description3.className = "lead white-font gotham";
+                                description3.innerHTML = "10,400-pound capacity, tandem-axel";
+                                col3.appendChild(description3);
+                                url3 = `palletForks.html`;
+                                link3 = document.createElement("a");
+                                link3.href = url3;
+                                button3 = document.createElement("button");
+                                button3.type = "button";
+                                button3.className = "btn btm-lg gotham white-font";
+                                button3.innerHTML = "Add This to My Package";
+                                link3.appendChild(button3);
+                                link3.addEventListener('click', function(){
+                                   localStorage.setItem("trailer", true);
+                                    localStorage.setItem("trailerPrice", 6199);
+                                });
+                                col3.appendChild(link3);
+                                row2.appendChild(col3);
+                                
+                                // 7x24
+                                col4 = document.createElement("div");
+                                col4.className = "col-lg-6";
+                                img4 = document.createElement("img");
+                                img4.src = "static/images/trailers/8.5x24.jpg";
+                                img4.className = "tractor-image";
+                                col4.appendChild(img4);
+                                header4 = document.createElement("h1");
+                                header4.className = "display-5 fw-bold white-font gotham mt-lg-1";
+                                header4.innerHTML = "7x24 Equipment";
+                                col4.appendChild(header4);
+                                description4 = document.createElement("p");
+                                description4.className = "lead white-font gotham";
+                                description4.innerHTML = "14,000-pound capacity, tandem-axel";
+                                col4.appendChild(description4);
+                                url4 = `palletForks.html`;
+                                link4 = document.createElement("a");
+                                link4.href = url4;
+                                button4 = document.createElement("button");
+                                button4.type = "button";
+                                button4.className = "btn btm-lg gotham white-font";
+                                button4.innerHTML = "Add This to My Package";
+                                link4.appendChild(button4);
+                                link4.addEventListener('click', function(){
+                                   localStorage.setItem("trailer", true);
+                                    localStorage.setItem("trailerPrice", 8599);
+                                });
+                                col4.appendChild(link4);
+                                row2.appendChild(col4);
+                                trailer.appendChild(row2);
+                                
+                                row3 = document.createElement("div");
+                                row3.className = "row flex=lg-row align-items-center g-5 py-5";
+                                
+                                // 8.5x24
+                                col5 = document.createElement("div");
+                                col5.className = "col-lg-6";
+                                img5 = document.createElement("img");
+                                img5.src = "static/images/trailers/8.5x24.jpg";
+                                img5.className = "tractor-image";
+                                col5.appendChild(img5);
+                                header5 = document.createElement("h1");
+                                header5.className = "display-5 fw-bold white-font gotham mt-lg-1";
+                                header5.innerHTML = "8.5x24 Deckover";
+                                col5.appendChild(header5);
+                                description5 = document.createElement("p");
+                                description5.className = "lead white-font gotham";
+                                description5.innerHTML = "14,000-pound capacity, tandem-axel";
+                                col5.appendChild(description5);
+                                url5 = `palletForks.html`;
+                                link5 = document.createElement("a");
+                                link5.href = url5;
+                                button5 = document.createElement("button");
+                                button5.type = "button";
+                                button5.className = "btn btm-lg gotham white-font";
+                                button5.innerHTML = "Add This to My Package";
+                                link5.appendChild(button5);
+                                link5.addEventListener('click', function(){
+                                   localStorage.setItem("trailer", true);
+                                    localStorage.setItem("trailerPrice", 9899);
+                                });
+                                col5.appendChild(link5);
+                                row3.appendChild(col5);
+                                
+                                trailer.appendChild(row3);
+                            }
+                    </script>
+                <div id="no" class="row flex-lg-row align-items-center g-5 py-5">
+                    <script>
+                        urlNo = `palletForks.html`;
+                        linkNo = document.createElement("a");
+                        linkNo.href = urlNo;
+                        linkNo.className = "no-bold no-underline gotham white-font";
+                        textNo = document.createElement("h2");
+                        textNo.innerHTML = "No Trailer";
+                        linkNo.appendChild(textNo);
+                        linkNo.addEventListener('click', function(){
+                                   localStorage.setItem("trailer", false);
+                                    localStorage.setItem("trailerPrice", 0);
+                                });
+                        no = document.getElementById("no");
+                        no.appendChild(linkNo);
+                    </script>
+                    <h5 class="gotham white-font">Don't see the trailer you need? Add the specifications you need on the review page!</h5>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

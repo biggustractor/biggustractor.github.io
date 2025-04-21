@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Build Your Tractor Package!</title>
+        <link rel="icon" href="static/images/favicon.ico" />
+        <link rel="stylesheet" href="static/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="static/stylesheets/base.css">
+    </head>
+    <div class="bgte-navbar bgte-gray-background sticky-top sm-shadow">
+        <a href="index.html">
+            <img src="static/logos/BGTE-Logo-Horizontal-Stroke.png" style="height: 100px;">
+        </a>
+    </div>
+    <body style="background: url('/static/images/biggustractor-bg-types.jpg')">
+        <div>
+        <div class="sm-section center">
+            <h1 class="white-font">Add Pallet Forks</h1>
+        </div>
+        <div class="break"></div>
+        <div class="center no-background-section">
+            <h2 class="gotham">Would you like to add pallet forks?</h2>
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div id="no" class="col-lg-6">
+                        <script>
+                            urlNo = `grapple.html`;
+                            linkNo = document.createElement("a");
+                            linkNo.className = "no-bold no-underline gotham black-font";
+                            linkNo.href = urlNo;
+                            headerNo = document.createElement("h2");
+                            headerNo.innerHTML = "No";
+                            linkNo.appendChild(headerNo);
+                            linkNo.addEventListener('click', function(){
+                                   localStorage.setItem("palletForks", false);
+                                    localStorage.setItem("pfPrice", 0);
+                                });
+                            no = document.getElementById("no");
+                            no.appendChild(linkNo);
+                        </script>
+                    </div>
+                    <div id="yes" class="col-lg-6">
+                        <script>
+                            const name = localStorage.getItem("name");
+                            const yes = document.getElementById("yes");
+                            
+                            if(name == "4540 4WD" || name == "4550 4WD" || name == "5145 4WD" || name == "5155 4WD" || name == "6065 Shuttle" || name == "6065 PST" || name == "6065 PST Cab" || name == "6075 PST" || name == "6075 PST Cab")
+                                {
+                                    urlYes = `grapple.html`;
+                                    linkYes = document.createElement("a");
+                                    linkYes.href = urlYes;
+                                    linkYes.className = "no-bold no-underline gotham black-font";
+                                    headerYes = document.createElement("h2");
+                                    headerYes.innerHTML = "Yes";
+                                    linkYes.appendChild(headerYes);
+                                    linkYes.addEventListener('click', function(){
+                                       localStorage.setItem("palletForks", true);
+                                        localStorage.setItem("pfPrice", 1599);
+                                });
+                                    yes.appendChild(linkYes);
+                                }
+                            else
+                                {
+                                    urlYes = `grapple.html?`;
+                                    linkYes = document.createElement("a");
+                                    linkYes.href = urlYes;
+                                    linkYes.className = "no-bold no-underline gotham black-font";
+                                    headerYes = document.createElement("h2");
+                                    headerYes.innerHTML = "Yes";
+                                    linkYes.appendChild(headerYes);
+                                    linkYes.addEventListener('click', function(){
+                                       localStorage.setItem("palletForks", true);
+                                        localStorage.setItem("pfPrice", 1199);
+                                });
+                                    yes.appendChild(linkYes);
+                                }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

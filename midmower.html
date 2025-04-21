@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Build Your Tractor Package!</title>
+        <link rel="icon" href="static/images/favicon.ico" />
+        <link rel="stylesheet" href="static/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="static/stylesheets/base.css">
+    </head>
+    <div class="bgte-navbar bgte-gray-background sticky-top sm-shadow">
+        <a href="index.html">
+            <img src="static/logos/BGTE-Logo-Horizontal-Stroke.png" style="height: 100px;">
+        </a>
+    </div>
+    <body style="background: url('/static/images/biggustractor-bg-types.jpg')">
+        <div>
+        <div class="sm-section center">
+            <h1 class="white-font">Add a Midmower</h1>
+        </div>
+        <div class="break"></div>
+        <div class="center no-background-section">
+            <h2 class="gotham">Would you like to add a midmower?</h2>
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div id="no" class="col-lg-6">
+                        <script>
+                            url = `trailer.html`;
+                            elem = document.createElement("a");
+                            elem.href = url;
+                            elem.className = "no-bold no-underline gotham black-font";
+                            textElem = document.createElement("h2");
+                            textElem.innerHTML = "No";
+                            elem.appendChild(textElem);
+                            no = document.getElementById("no");
+                            no.appendChild(elem);
+                            elem.addEventListener('click', function(){
+                                localStorage.setItem("midMower", false);
+                                localStorage.setItem("midMowerPrice", 0);
+                            });
+                        </script>
+                    </div>
+                    <div id="yes" class="col-lg-6">
+                        <script>
+                            url = `trailer.html`;
+                            elem = document.createElement("a");
+                            elem.href = url;
+                            elem.className = "no-bold no-underline gotham black-font";
+                            textElem = document.createElement("h2");
+                            textElem.innerHTML = "Yes";
+                            elem.appendChild(textElem);
+                            yes = document.getElementById("yes");
+                            yes.appendChild(elem);
+                            elem.addEventListener('click', function(){
+                                localStorage.setItem("backhoePrice", 0);
+                                localStorage.setItem("midMower", true);
+                                midMowerPrice = localStorage.getItem("midMowerPrice");
+                                localStorage.setItem("midMowerPrice", midMowerPrice);
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

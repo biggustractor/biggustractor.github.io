@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Build Your Tractor Package!</title>
+        <link rel="icon" href="static/images/favicon.ico" />
+        <link rel="stylesheet" href="static/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="static/stylesheets/base.css">
+    </head>
+    <div class="bgte-navbar bgte-gray-background sticky-top sm-shadow">
+        <a href="index.html">
+            <img src="static/logos/BGTE-Logo-Horizontal-Stroke.png" style="height: 100px;">
+        </a>
+    </div>
+    <body style="background: url('/static/images/biggustractor-bg-types.jpg')">
+         <div class="sm-section center">
+            <h1 class="white-font">Add a Finish Mower</h1>
+        </div>
+        <div class="break" style="margin-top: 60px;"></div>
+        <div class="body-section">
+            <div id="container" class="container col-xxl-8 px-4 py-5">
+                <script>
+                    const tractorName = localStorage.getItem("name");
+                    const urlR = "review.html";
+                    const urlC = "canopy.html";
+                    const container = document.getElementById("container");
+                    
+                    if (tractorName=='1120 HST' || tractorName=='1120 HST Cab' || tractorName=='1123 HST' || tractorName=='1123 HST Cab' || tractorName=='1126 HST' || tractorName=='1126 HST Cab' || tractorName=='2123 HST')
+                        {
+                            row1 = document.createElement("div");
+                            row1.className = "row flex-lg-row align-items-center g-5 py-5";
+                            header1 = document.createElement("h1");
+                            header1.className = "white-font mb-0 mt-0";
+                            header1.innerHTML = "4' Finish Mower";
+                            row1.appendChild(header1);
+                            if (tractorName=='1120 HST Cab' || tractorName=='1123 HST Cab' || tractorName=='1126 HST Cab')
+                                {
+                                    link1 = document.createElement("a");
+                                    link1.href = urlR;
+                                    link1.className = "mb-0 mt-4";
+                                    button1 = document.createElement("button");
+                                    button1.type = "button";
+                                    button1.className = "btn btm-lg gotham white-font";
+                                    button1.innerHTML = "Add This to My Package";
+                                    link1.appendChild(button1);
+                                    link1.addEventListener('click', function(){
+                                        localStorage.setItem("finishMower", true);
+                                        localStorage.setItem("finishMowerPrice", 3199);
+                                        localStorage.setItem("canopy", false);
+                                        localStorage.setItem("canopyPrice", 0);
+                                    });
+                                    row1.appendChild(link1);
+                                }
+                            else
+                                {
+                                    link1 = document.createElement("a");
+                                    link1.href = urlC;
+                                    link1.className = "mb-0 mt-4";
+                                    button1 = document.createElement("button");
+                                    button1.type = "button";
+                                    button1.className = "btn btm-lg gotham white-font";
+                                    button1.innerHTML = "Add This to My Package";
+                                    link1.appendChild(button1);
+                                    link1.addEventListener('click', function(){
+                                        localStorage.setItem("finishMower", true);
+                                        localStorage.setItem("finishMowerPrice", 3199);
+                                    });
+                                    row1.appendChild(link1);
+                                }
+                            
+                            container.appendChild(row1);
+                        }
+                    else if (tractorName=='2126 HST' || tractorName=='2126 HST Cab' || tractorName=='1626 S' || tractorName=='1626 HST' || tractorName=='1635 S')
+                        {
+                            row1 = document.createElement("div");
+                            row1.className = "row flex-lg-row align-items-center g-5 py-5";
+                            col1 = document.createElement("div");
+                            col1.className = "col-lg-6";
+                            header1 = document.createElement("h1");
+                            header1.className = "white-font mb-0 mt-0";
+                            header1.innerHTML = "4' Finish Mower";
+                            col1.appendChild(header1);
+                            
+                            if (tractorName=='2126 HST Cab')
+                                {
+                                    link1 = document.createElement("a");
+                                    link1.href = urlR;
+                                    link1.className = "mb-0 mt-4";
+                                    button1 = document.createElement("button");
+                                    button1.type = "button";
+                                    button1.className = "btn btm-lg gotham white-font";
+                                    button1.innerHTML = "Add This to My Package";
+                                    link1.appendChild(button1);
+                                    link1.addEventListener('click', function(){
+                                        localStorage.setItem("finishMower", true);
+                                        localStorage.setItem("finishMowerPrice", 3199);
+                                        localStorage.setItem("canopy", false);
+                                        localStorage.setItem("canopyPrice", 0);
+                                    });
+                                    col1.appendChild(link1);
+                                }
+                            else
+                                {
+                                    link1 = document.createElement("a");
+                                    link1.href = urlC;
+                                    link1.className = "mb-0 mt-4";
+                                    button1 = document.createElement("button");
+                                    button1.type = "button";
+                                    button1.className = "btn btm-lg gotham white-font";
+                                    button1.innerHTML = "Add This to My Package";
+                                    link1.appendChild(button1);
+                                    link1.addEventListener('click', function(){
+                                        localStorage.setItem("finishMower", true);
+                                        localStorage.setItem("finishMowerPrice", 3199);
+                                    });
+                                    col1.appendChild(link1);
+                                }
+                            row1.appendChild(col1);
+                            
+                            col2 = document.createElement("div");
+                            col2.className = "col-lg-6";
+                            header2 = document.createElement("h1");
+                            header2.className = "white-font mb-0 mt-0";
+                            header2.innerHTML = "5' Finish Mower";
+                            col2.appendChild(header2);
+                            
+                            
+                            if (tractorName=='2126 HST Cab')
+                                {
+                                    link2 = document.createElement("a");
+                                    link2.href = urlR;
+                                    link2.className = "mb-0 mt-4";
+                                    button2 = document.createElement("button");
+                                    button2.type = "button";
+                                    button2.className = "btn btm-lg gotham white-font";
+                                    button2.innerHTML = "Add This to My Package";
+                                    link2.appendChild(button2);
+                                    link2.addEventListener('click', function(){
+                                        localStorage.setItem("finishMower", true);
+                                        localStorage.setItem("finishMowerPrice", 3499);
+                                        localStorage.setItem("canopy", false);
+                                        localStorage.setItem("canopyPrice", 0);
+                                    });
+                                    col2.appendChild(link2);
+                                }
+                            else
+                                {
+                                    link2 = document.createElement("a");
+                                    link2.href = urlC;
+                                    link2.className = "mb-0 mt-4";
+                                    button2 = document.createElement("button");
+                                    button2.type = "button";
+                                    button2.className = "btn btm-lg gotham white-font";
+                                    button2.innerHTML = "Add This to My Package";
+                                    link2.appendChild(button2);
+                                    link2.addEventListener('click', function(){
+                                        localStorage.setItem("finishMower", true);
+                                        localStorage.setItem("finishMowerPrice", 3499);
+                                    });
+                                    col2.appendChild(link2);
+                                }
+                            row1.appendChild(col2);
+                            
+                            container.appendChild(row1);
+                        }
+                    else
+                        {
+                            row1 = document.createElement("div");
+                            row1.className = "row flex-lg-row align-items-center g-5 py-5";
+                            col1 = document.createElement("div");
+                            col1.className = "col-lg-6";
+                            header1 = document.createElement("h1");
+                            header1.className = "white-font mb-0 mt-0";
+                            header1.innerHTML = "4' Finish Mower";
+                            col1.appendChild(header1);
+                            
+                            if (tractorName=='1635 HST Cab' || tractorName=='1640 HST Cab' || tractorName=='6065 PST Cab' || tractorName=='6075 PST Cab')
+                                {
+                                    link1 = document.createElement("a");
+                                    link1.href = urlR;
+                                    link1.className = "mb-0 mt-4";
+                                    button1 = document.createElement("button");
+                                    button1.type = "button";
+                                    button1.className = "btn btm-lg gotham white-font";
+                                    button1.innerHTML = "Add This to My Package";
+                                    link1.appendChild(button1);
+                                    link1.addEventListener('click', function(){
+                                        localStorage.setItem("finishMower", true);
+                                        localStorage.setItem("finishMowerPrice", 3199);
+                                        localStorage.setItem("canopy", false);
+                                        localStorage.setItem("canopyPrice", 0);
+                                    });
+                                    col1.appendChild(link1);
+                                }
+                            else
+                                {
+                                    link1 = document.createElement("a");
+                                    link1.href = urlC;
+                                    link1.className = "mb-0 mt-4";
+                                    button1 = document.createElement("button");
+                                    button1.type = "button";
+                                    button1.className = "btn btm-lg gotham white-font";
+                                    button1.innerHTML = "Add This to My Package";
+                                    link1.appendChild(button1);
+                                    link1.addEventListener('click', function(){
+                                        localStorage.setItem("finishMower", true);
+                                        localStorage.setItem("finishMowerPrice", 3199);
+                                    });
+                                    col1.appendChild(link1);
+                                }
+                            row1.appendChild(col1);
+                            
+                            col2 = document.createElement("div");
+                            col2.className = "col-lg-6";
+                            header2 = document.createElement("h1");
+                            header2.className = "white-font mb-0 mt-0";
+                            header2.innerHTML = "5' Finish Mower";
+                            col2.appendChild(header2);
+                            
+                            
+                            if (tractorName=='1635 HST Cab' || tractorName=='1640 HST Cab' || tractorName=='6065 PST Cab' || tractorName=='6075 PST Cab')
+                                {
+                                    link2 = document.createElement("a");
+                                    link2.href = urlR;
+                                    link2.className = "mb-0 mt-4";
+                                    button2 = document.createElement("button");
+                                    button2.type = "button";
+                                    button2.className = "btn btm-lg gotham white-font";
+                                    button2.innerHTML = "Add This to My Package";
+                                    link2.appendChild(button2);
+                                    link2.addEventListener('click', function(){
+                                        localStorage.setItem("finishMower", true);
+                                        localStorage.setItem("finishMowerPrice", 3499);
+                                        localStorage.setItem("canopy", false);
+                                        localStorage.setItem("canopyPrice", 0);
+                                    });
+                                    col2.appendChild(link2);
+                                }
+                            else
+                                {
+                                    link2 = document.createElement("a");
+                                    link2.href = urlC;
+                                    link2.className = "mb-0 mt-4";
+                                    button2 = document.createElement("button");
+                                    button2.type = "button";
+                                    button2.className = "btn btm-lg gotham white-font";
+                                    button2.innerHTML = "Add This to My Package";
+                                    link2.appendChild(button2);
+                                    link2.addEventListener('click', function(){
+                                        localStorage.setItem("finishMower", true);
+                                        localStorage.setItem("finishMowerPrice", 3499);
+                                    });
+                                    col2.appendChild(link2);
+                                }
+                            row1.appendChild(col2);
+                            container.appendChild(row1);
+                            
+                            row2 = document.createElement("div");
+                            row2.className = "row flex-lg-row align-items-center g-5 py-5 mt-4";
+                            header3 = document.createElement("h1");
+                            header3.className = "white-font mb-0 mt-0";
+                            header3.innerHTML = "6' Finish Mower";
+                            row2.appendChild(header3);
+                            if (tractorName=='1635 HST Cab' || tractorName=='1640 HST Cab' || tractorName=='6065 PST Cab' || tractorName=='6075 PST Cab')
+                                {
+                                    link3 = document.createElement("a");
+                                    link3.href = urlR;
+                                    link3.className = "mb-0 mt-4";
+                                    button3 = document.createElement("button");
+                                    button3.type = "button";
+                                    button3.className = "btn btm-lg gotham white-font";
+                                    button3.innerHTML = "Add This to My Package";
+                                    link3.appendChild(button3);
+                                    link3.addEventListener('click', function(){
+                                        localStorage.setItem("finishMower", true);
+                                        localStorage.setItem("finishMowerPrice", 3899);
+                                        localStorage.setItem("canopy", false);
+                                        localStorage.setItem("canopyPrice", 0);
+                                    });
+                                    row2.appendChild(link3);
+                                }
+                            else
+                                {
+                                    link3 = document.createElement("a");
+                                    link3.href = urlC;
+                                    link3.className = "mb-0 mt-4";
+                                    button3 = document.createElement("button");
+                                    button3.type = "button";
+                                    button3.className = "btn btm-lg gotham white-font";
+                                    button3.innerHTML = "Add This to My Package";
+                                    link3.appendChild(button3);
+                                    link3.addEventListener('click', function(){
+                                        localStorage.setItem("finishMower", true);
+                                        localStorage.setItem("finishMowerPrice", 3899);
+                                    });
+                                    row2.appendChild(link3);
+                                }
+                            
+                            
+                            container.appendChild(row2);
+                        }
+                </script>
+                <div id="no" class="row flex-lg-row align-items-center g-5 py-5">
+                    <script>
+                        const no = document.getElementById("no");
+                        if (tractorName=='1120 HST Cab' || tractorName=='1123 HST Cab' || tractorName=='1126 HST Cab' || tractorName=='2126 HST Cab' || tractorName=='1635 HST Cab' || tractorName=='1640 HST Cab' || tractorName=='6065 PST Cab' || tractorName=='6075 PST Cab')
+                            {
+                                linkNo = document.createElement("a");
+                                linkNo.href = urlR;
+                                linkNo.className = "mb-0 mt-4";
+                                buttonNo = document.createElement("button");
+                                buttonNo.type = "button";
+                                buttonNo.className = "btn btm-lg gotham white-font";
+                                headerNo = document.createElement("h2");
+                                headerNo.innerHTML = "No Finish Mower";
+                                buttonNo.appendChild(headerNo);
+                                linkNo.appendChild(buttonNo);
+                                linkNo.addEventListener('click', function(){
+                                    localStorage.setItem("finishMower", false);
+                                    localStorage.setItem("finishMowerPrice", 0);
+                                    localStorage.setItem("canopy", false);
+                                    localStorage.setItem("canopyPrice", 0);
+                                });
+                                no.appendChild(linkNo);
+                            }
+                        else
+                            {
+                                linkNo = document.createElement("a");
+                                linkNo.href = urlC;
+                                linkNo.className = "mb-0 mt-4";
+                                buttonNo = document.createElement("button");
+                                buttonNo.type = "button";
+                                buttonNo.className = "btn btm-lg gotham white-font";
+                                headerNo = document.createElement("h2");
+                                headerNo.innerHTML = "No Finish Mower";
+                                buttonNo.appendChild(headerNo);
+                                linkNo.appendChild(buttonNo);
+                                linkNo.addEventListener('click', function(){
+                                    localStorage.setItem("finishMower", false);
+                                    localStorage.setItem("finishMowerPrice", 0);
+                                });
+                                no.appendChild(linkNo);
+                            }
+                        
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

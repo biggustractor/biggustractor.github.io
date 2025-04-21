@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Build Your Tractor Package!</title>
+        <link rel="icon" href="static/images/favicon.ico" />
+        <link rel="stylesheet" href="static/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="static/stylesheets/base.css">
+    </head>
+    <div class="bgte-navbar bgte-gray-background sticky-top sm-shadow">
+        <a href="index.html">
+            <img src="static/logos/BGTE-Logo-Horizontal-Stroke.png" style="height: 100px;">
+        </a>
+    </div>
+    <body style="background: url('/static/images/biggustractor-bg-types.jpg')">
+        <div class="sm-section center">
+            <h1 class="white-font">Review Your Package</h1>
+        </div>
+        <div class="break" style="margin-top: 60px;"></div>
+        <div class="body-section text-center">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row align-items-center g-5 mb-0">
+                    <form action="https://formsubmit.co/65d8ad3ef73b011eca159947ebc12c70" method="POST" name="emailform">
+                        <div id="row" class="row flex-lg-row center text-center white-font gotham">
+                            <script>
+                                const row = document.getElementById("row");
+                                
+                                name = localStorage.getItem("name");
+                                nameHeader = document.createElement("h1");
+                                nameHeader.innerHTML = name;
+                                row.appendChild(nameHeader);
+                                nameInput = document.createElement("input");
+                                nameInput.type = "hidden";
+                                nameInput.name = "Tractor";
+                                nameInput.value = name;
+                                row.appendChild(nameInput);
+                                
+                                if (localStorage.getItem("backhoe") == 'true')
+                                    {
+                                        backhoeHeader = document.createElement("h5");
+                                        backhoeHeader.innerHTML = name + " Backhoe";
+                                        row.appendChild(backhoeHeader);
+                                        backhoeInput = document.createElement("input");
+                                        backhoeInput.type = "hidden";
+                                        backhoeInput.name = "Backhoe";
+                                        backhoeInput.value = name + " Backhoe";
+                                        row.appendChild(backhoeInput);
+                                    }
+                                
+                                 if (localStorage.getItem("midMower") == 'true')
+                                    {
+                                        midMowerHeader = document.createElement("h5");
+                                        midMowerHeader.innerHTML = name + " Midmower";
+                                        row.appendChild(midMowerHeader);
+                                        midMowerInput = document.createElement("input");
+                                        midMowerInput.type = "hidden";
+                                        midMowerInput.name = "Midmower";
+                                        midMowerInput.value = name + " Midmower";
+                                        row.appendChild(midMowerInput);
+                                    }
+                                
+                                if (localStorage.getItem("trailer") == 'true')
+                                    {
+                                        trailerPrice = localStorage.getItem("trailerPrice");
+                                        trailerHeader = document.createElement("h5");
+                                        if (trailerPrice == '4299')
+                                            {
+                                                trailerHeader.innerHTML = "7x16 Utility Trailer";
+                                                row.appendChild(trailerHeader);
+                                                trailerInput = document.createElement("input");
+                                                trailerInput.type = "hidden";
+                                                trailerInput.name = "Trailer";
+                                                trailerInput.value = "7x16";
+                                                row.appendChild(trailerInput);
+                                            }
+                                        else if (trailerPrice == '4899')
+                                            {
+                                                trailerHeader.innerHTML = "7x20 Equipment Trailer";
+                                                row.appendChild(trailerHeader);
+                                                trailerInput = document.createElement("input");
+                                                trailerInput.type = "hidden";
+                                                trailerInput.name = "Trailer";
+                                                trailerInput.value = "7x20";
+                                                row.appendChild(trailerInput);
+                                            }
+                                        else if (trailerPrice == '6199')
+                                            {
+                                                trailerHeader.innerHTML = "7x22 Equipment Trailer";
+                                                row.appendChild(trailerHeader);
+                                                trailerInput = document.createElement("input");
+                                                trailerInput.type = "hidden";
+                                                trailerInput.name = "Trailer";
+                                                trailerInput.value = "7x22";
+                                                row.appendChild(trailerInput);
+                                            }
+                                        else if (trailerPrice == '8599')
+                                            {
+                                                trailerHeader.innerHTML = "7x24 Equipment Trailer";
+                                                row.appendChild(trailerHeader);
+                                                trailerInput = document.createElement("input");
+                                                trailerInput.type = "hidden";
+                                                trailerInput.name = "Trailer";
+                                                trailerInput.value = "7x24";
+                                                row.appendChild(trailerInput);
+                                            }
+                                        else if (trailerPrice == '9899')
+                                            {
+                                                trailerHeader.innerHTML = "8.5x24 Deckover Trailer";
+                                                row.appendChild(trailerHeader);
+                                                trailerInput = document.createElement("input");
+                                                trailerInput.type = "hidden";
+                                                trailerInput.name = "Trailer";
+                                                trailerInput.value = "8.5x24";
+                                                row.appendChild(trailerInput);
+                                            }
+                                    }
+                                
+                                if (localStorage.getItem("palletForks") == 'true')
+                                    {
+                                        pfPrice = localStorage.getItem("pfPrice");
+                                        if (pfPrice == '1199')
+                                            {
+                                                pfHeader = document.createElement("h5");
+                                                pfHeader.innerHTML = "2k Pallet Forks";
+                                                row.appendChild(pfHeader);
+                                                pfInput = document.createElement("input");
+                                                pfInput.type = "hidden";
+                                                pfInput.name = "Pallet Forks";
+                                                pfInput.value = "2k";
+                                                row.appendChild(pfInput);
+                                            }
+                                        else if (pfPrice == '1599')
+                                            {
+                                                pfHeader = document.createElement("h5");
+                                                pfHeader.innerHTML = "4k Pallet Forks";
+                                                row.appendChild(pfHeader);
+                                                pfInput = document.createElement("input");
+                                                pfInput.type = "hidden";
+                                                pfInput.name = "Pallet Forks";
+                                                pfInput.value = "4k";
+                                                row.appendChild(pfInput);
+                                            }
+                                    }
+                                
+                                if (localStorage.getItem("grapple") == 'true')
+                                    {
+                                        gPrice = localStorage.getItem("grapplePrice");
+                                        gHeader = document.createElement("h5");
+                                        if (gPrice == '1799')
+                                            {
+                                                gHeader.innerHTML = '48" Grapple';
+                                                row.appendChild(gHeader);
+                                                gInput = document.createElement("input");
+                                                gInput.type = "hidden";
+                                                gInput.name = "Grapple";
+                                                gInput.value = '48"';
+                                                row.appendChild(gInput);
+                                            }
+                                        else if (gPrice == '1999')
+                                            {
+                                                gHeader.innerHTML = '60" Grapple';
+                                                row.appendChild(gHeader);
+                                                gInput = document.createElement("input");
+                                                gInput.type = "hidden";
+                                                gInput.name = "Grapple";
+                                                gInput.value = '60"';
+                                                row.appendChild(gInput);
+                                            }
+                                        else if (gPrice == '2499')
+                                            {
+                                                gHeader.innerHTML = '66" Grapple';
+                                                row.appendChild(gHeader);
+                                                gInput = document.createElement("input");
+                                                gInput.type = "hidden";
+                                                gInput.name = "Grapple";
+                                                gInput.value = '66"';
+                                                row.appendChild(gInput);
+                                            }
+                                        else if (gPrice == '2799')
+                                            {
+                                                gHeader.innerHTML = '72" Grapple';
+                                                row.appendChild(gHeader);
+                                                gInput = document.createElement("input");
+                                                gInput.type = "hidden";
+                                                gInput.name = "Grapple";
+                                                gInput.value = '72"';
+                                                row.appendChild(gInput);
+                                            }
+                                    }
+                                
+                                if (localStorage.getItem("stumpBucket") == 'true')
+                                    {
+                                        sbHeader = document.createElement("h5");
+                                        sbHeader.innerHTML = "Heavy Duty Stump Bucket";
+                                        row.appendChild(sbHeader);
+                                        sbInput = document.createElement("input");
+                                        sbInput.type = "hidden";
+                                        sbInput.name = "Stump Bucket";
+                                        sbInput.value = "Yes";
+                                        row.appendChild(sbInput);
+                                    }
+                                
+                                if (localStorage.getItem("boxBlade") == 'true')
+                                    {
+                                        bbPrice = localStorage.getItem("boxBladePrice");
+                                        bbHeader = document.createElement("h5");
+                                        
+                                        if (bbPrice == '1399')
+                                            {
+                                                bbHeader.innerHTML = "4' Box Blade";
+                                                row.appendChild(bbHeader);
+                                                bbInput = document.createElement("input");
+                                                bbInput.type = "hidden";
+                                                bbInput.name = "Box Blade";
+                                                gInput.value = "4'";
+                                                row.appendChild(bbInput);
+                                            }
+                                        else if (bbPrice == '1499')
+                                            {
+                                                bbHeader.innerHTML = "5' Box Blade";
+                                                row.appendChild(bbHeader);
+                                                bbInput = document.createElement("input");
+                                                bbInput.type = "hidden";
+                                                bbInput.name = "Box Blade";
+                                                gInput.value = "5'";
+                                                row.appendChild(bbInput);
+                                            }
+                                        else if (bbPrice == '1699')
+                                            {
+                                                bbHeader.innerHTML = "6' Box Blade";
+                                                row.appendChild(bbHeader);
+                                                bbInput = document.createElement("input");
+                                                bbInput.type = "hidden";
+                                                bbInput.name = "Box Blade";
+                                                gInput.value = "6'";
+                                                row.appendChild(bbInput);
+                                            }
+                                        else if (bbPrice == '1999')
+                                            {
+                                                bbHeader.innerHTML = "7' Box Blade";
+                                                row.appendChild(bbHeader);
+                                                bbInput = document.createElement("input");
+                                                bbInput.type = "hidden";
+                                                bbInput.name = "Box Blade";
+                                                gInput.value = "7'";
+                                                row.appendChild(bbInput);
+                                            }
+                                    }
+                                
+                                if (localStorage.getItem("rotaryCutter") == 'true')
+                                    {
+                                        rcPrice = localStorage.getItem("rotaryCutterPrice");
+                                        rcHeader = document.createElement("h5");
+                                        if (rcPrice == '1899')
+                                            {
+                                                rcHeader.innerHTML = "4' Rotary Cutter";
+                                                row.appendChild(rcHeader);
+                                                rcInput = document.createElement("input");
+                                                rcInput.type = "hidden";
+                                                rcInput.name = "Rotary Cutter";
+                                                rcInput.value = "4'";
+                                                row.appendChild(rcInput);
+                                            }
+                                        else if (rcPrice == '2399')
+                                            {
+                                                rcHeader.innerHTML = "5' Rotary Cutter";
+                                                row.appendChild(rcHeader);
+                                                rcInput = document.createElement("input");
+                                                rcInput.type = "hidden";
+                                                rcInput.name = "Rotary Cutter";
+                                                rcInput.value = "5'";
+                                                row.appendChild(rcInput);
+                                            }
+                                        else if (rcPrice == '2699')
+                                            {
+                                                rcHeader.innerHTML = "6' Rotary Cutter";
+                                                row.appendChild(rcHeader);
+                                                rcInput = document.createElement("input");
+                                                rcInput.type = "hidden";
+                                                rcInput.name = "Rotary Cutter";
+                                                rcInput.value = "6'";
+                                                row.appendChild(rcInput);
+                                            }
+                                        else if (rcPrice == '5999')
+                                            {
+                                                rcHeader.innerHTML = "7' Rotary Cutter";
+                                                row.appendChild(rcHeader);
+                                                rcInput = document.createElement("input");
+                                                rcInput.type = "hidden";
+                                                rcInput.name = "Rotary Cutter";
+                                                rcInput.value = "7'";
+                                                row.appendChild(rcInput);
+                                            }
+                                    }
+                                
+                                if (localStorage.getItem("tiller") == 'true')
+                                    {
+                                        tPrice = localStorage.getItem("tillerPrice");
+                                        tHeader = document.createElement("h5");
+                                        if (tPrice == '2299')
+                                            {
+                                                tHeader.innerHTML = "4' Tiller";
+                                                row.appendChild(tHeader);
+                                                tInput = document.createElement("input");
+                                                tInput.type = "hidden";
+                                                tInput.name = "Tiller";
+                                                tInput.value = "4'";
+                                                row.appendChild(tInput);
+                                            }
+                                        else if (tPrice == '3299')
+                                            {
+                                                tHeader.innerHTML = "5' Tiller";
+                                                row.appendChild(tHeader);
+                                                tInput = document.createElement("input");
+                                                tInput.type = "hidden";
+                                                tInput.name = "Tiller";
+                                                tInput.value = "5'";
+                                                row.appendChild(tInput);
+                                            }
+                                        else if (tPrice == '3899')
+                                            {
+                                                tHeader.innerHTML = "6' Tiller";
+                                                row.appendChild(tHeader);
+                                                tInput = document.createElement("input");
+                                                tInput.type = "hidden";
+                                                tInput.name = "Tiller";
+                                                tInput.value = "6'";
+                                                row.appendChild(tInput);
+                                            }
+                                        else if (tPrice == '5999')
+                                            {
+                                                tHeader.innerHTML = "7' Tiller";
+                                                row.appendChild(tHeader);
+                                                tInput = document.createElement("input");
+                                                tInput.type = "hidden";
+                                                tInput.name = "Tiller";
+                                                tInput.value = "7'";
+                                                row.appendChild(tInput);
+                                            }
+                                    }
+                                
+                                if (localStorage.getItem("discHarrow") == 'true')
+                                    {
+                                        dhPrice = localStorage.getItem("discHarrowPrice");
+                                        dhHeader = document.createElement("h5");
+                                        if (dhPrice == '2399')
+                                            {
+                                                dhHeader.innerHTML = "4' Disc Harrow";
+                                                row.appendChild(dhHeader);
+                                                dhInput = document.createElement("input");
+                                                dhInput.type = "hidden";
+                                                dhInput.name = "Disc Harrow";
+                                                dhInput.value = "4'";
+                                                row.appendChild(dhInput);
+                                            }
+                                        else if (dhPrice == '2999')
+                                            {
+                                                dhHeader.innerHTML = "5' Disc Harrow";
+                                                row.appendChild(dhHeader);
+                                                dhInput = document.createElement("input");
+                                                dhInput.type = "hidden";
+                                                dhInput.name = "Disc Harrow";
+                                                dhInput.value = "5'";
+                                                row.appendChild(dhInput);
+                                            }
+                                        else if (dhPrice == '3699')
+                                            {
+                                                dhHeader.innerHTML = "6' Disc Harrow";
+                                                row.appendChild(dhHeader);
+                                                dhInput = document.createElement("input");
+                                                dhInput.type = "hidden";
+                                                dhInput.name = "Disc Harrow";
+                                                dhInput.value = "6'";
+                                                row.appendChild(dhInput);
+                                            }
+                                        else if (dhPrice == '4299')
+                                            {
+                                                dhHeader.innerHTML = "7' Disc Harrow";
+                                                row.appendChild(dhHeader);
+                                                dhInput = document.createElement("input");
+                                                dhInput.type = "hidden";
+                                                dhInput.name = "Disc Harrow";
+                                                dhInput.value = "7'";
+                                                row.appendChild(dhInput);
+                                            }
+                                    }
+                                
+                                if (localStorage.getItem("flail") == 'true')
+                                    {
+                                        fHeader = document.createElement("h5");
+                                        fHeader.innerHTML = "Flail Mower";
+                                        row.appendChild(fHeader);
+                                        fInput = document.createElement("input");
+                                        fInput.type = "hidden";
+                                        fInput.name = "Flail Mower";
+                                        fInput.value = "Yes";
+                                        row.appendChild(fInput);
+                                    }
+                                
+                                if (localStorage.getItem("postHole") == 'true')
+                                    {
+                                        phHeader = document.createElement("h5");
+                                        phHeader.innerHTML = "Post Hole Digger";
+                                        row.appendChild(phHeader);
+                                        phInput = document.createElement("input");
+                                        phInput.type = "hidden";
+                                        phInput.name = "Post Hole";
+                                        phInput.value = "Yes";
+                                        row.appendChild(phInput);
+                                    }
+                                
+                                if (localStorage.getItem("polyHopper") == 'true')
+                                    {
+                                        phHeader = document.createElement("h5");
+                                        phHeader.innerHTML = "Poly Hopper Spreader";
+                                        row.appendChild(phHeader);
+                                        phInput = document.createElement("input");
+                                        phInput.type = "hidden";
+                                        phInput.name = "Poly Hopper";
+                                        phInput.value = "Yes";
+                                        row.appendChild(phInput);
+                                    }
+                                
+                                if (localStorage.getItem("dualEdge") == 'true')
+                                    {
+                                        dePrice = localStorage.getItem("dualEdgePrice");
+                                        deHeader = document.createElement("h5");
+                                        if (dePrice == '2899')
+                                            {
+                                                deHeader.innerHTML = "5' Dual Edge Grader Blade";
+                                                row.appendChild(deHeader);
+                                                deInput = document.createElement("input");
+                                                deInput.type = "hidden";
+                                                deInput.name = "Dual Edge Grader Blade";
+                                                deInput.value = "5'";
+                                                row.appendChild(deInput);
+                                            }
+                                        else if (dePrice == '3199')
+                                            {
+                                                deHeader.innerHTML = "6' Dual Edge Grader Blade";
+                                                row.appendChild(deHeader);
+                                                deInput = document.createElement("input");
+                                                deInput.type = "hidden";
+                                                deInput.name = "Dual Edge Grader Blade";
+                                                deInput.value = "6'";
+                                                row.appendChild(deInput);
+                                            }
+                                    }
+                                
+                                if (localStorage.getItem("finishMower") == 'true')
+                                    {
+                                        fmPrice = localStorage.getItem("finishMowerPrice");
+                                        fmHeader = document.createElement("h5");
+                                        if (fmPrice == '3199')
+                                            {
+                                                fmHeader.innerHTML = "4' Finish Mower";
+                                                row.appendChild(fmHeader);
+                                                fmInput = document.createElement("input");
+                                                fmInput.type = "hidden";
+                                                fmInput.name = "Finish Mower";
+                                                fmInput.value = "4'";
+                                                row.appendChild(fmInput);
+                                            }
+                                        else if (fmPrice == '3499')
+                                            {
+                                                fmHeader.innerHTML = "5' Finish Mower";
+                                                row.appendChild(fmHeader);
+                                                fmInput = document.createElement("input");
+                                                fmInput.type = "hidden";
+                                                fmInput.name = "Finish Mower";
+                                                fmInput.value = "5'";
+                                                row.appendChild(fmInput);
+                                            }
+                                        else if (fmPrice == '3899')
+                                            {
+                                                fmHeader.innerHTML = "6' Finish Mower";
+                                                row.appendChild(fmHeader);
+                                                fmInput = document.createElement("input");
+                                                fmInput.type = "hidden";
+                                                fmInput.name = "Finish Mower";
+                                                fmInput.value = "6'";
+                                                row.appendChild(fmInput);
+                                            }
+                                    }
+                                
+                                if (localStorage.getItem("canopy") == 'true')
+                                    {
+                                        cHeader = document.createElement("h5");
+                                        cHeader.innerHTML = "Canopy";
+                                        row.appendChild(cHeader);
+                                        cInput = document.createElement("input");
+                                        cInput.type = "hidden";
+                                        cInput.name = "Canopy";
+                                        cInput.value = "Yes";
+                                        row.appendChild(cInput);
+                                    }
+                                
+                            </script>  
+                        </div>
+                        <div class="row flex-lg-row g-5 py-5 center text-center">
+                            <h5 class="white-font gotham center">Any comments or trailer specifications:</h5>
+                            <textarea type="message" id="comments" name="Comments/Trailer Specifications"></textarea>
+                        </div>
+                        <div class="row flex-lg-row align-items-center g-5 mb-0">
+                            <h1 class="white-font gotham" id="price">Price Before Package Discount: </h1>
+                            <input type="hidden" name="Price Before Package Discount" id="priceInput" value="" />
+                        </div>
+
+                        <input type="submit" id="submit" name="submit" value="Submit to Get Your Discounted Tractor Package Price" class="mt-5 submit gotham" />
+                        <input type="hidden" name="_subject" value="New Tractor Package Submission" />
+                        <input type="hidden" name="_cc" value="brad@biggustractor.com"/>
+
+
+                        <script>
+                            var total = 0;
+                            const backhoe = parseInt(localStorage.getItem("backhoePrice"));
+                            const midMower = parseInt(localStorage.getItem("midMowerPrice"));
+                            const tractor = parseInt(localStorage.getItem("price"));
+                            const trailer = parseInt(localStorage.getItem("trailerPrice"));
+                            const pf = parseInt(localStorage.getItem("pfPrice"));
+                            const grapple = parseInt(localStorage.getItem("grapplePrice"));
+                            const sb = parseInt(localStorage.getItem("stumpBucketPrice"));
+                            const bb = parseInt(localStorage.getItem("boxBladePrice"));
+                            const rc = parseInt(localStorage.getItem("rotaryCutterPrice"));
+                            const tiller = parseInt(localStorage.getItem("tillerPrice"));
+                            const dh = parseInt(localStorage.getItem("discHarrowPrice"));
+                            const fm = parseInt(localStorage.getItem("flailPrice"));
+                            console.log(fm);
+                            const ph = parseInt(localStorage.getItem("postHolePrice"));
+                            const poly = parseInt(localStorage.getItem("polyHopperPrice"));
+                            const de = parseInt(localStorage.getItem("dualEdgePrice"));
+                            const finish = parseInt(localStorage.getItem("finishMowerPrice"));
+                            const c = parseInt(localStorage.getItem("canopyPrice"));
+                            
+                            if (backhoe != 0) {
+                                total += backhoe;
+                            } else if (midMower != 0) {
+                                total += midMower;
+                            } else {
+                                total += tractor;
+                            }
+            
+                            if (trailer != 0) {
+                                total += trailer;
+                            }
+            
+                            if (pf != 0) {
+                                total += pf;
+                            }
+                            
+                            if (grapple != 0) {
+                                total += grapple;
+                            }
+            
+                            if (sb != 0) {
+                                total += sb;
+                            }
+            
+                            if (bb != 0) {
+                                total += bb;
+                            }
+            
+                            if (rc != 0) {
+                                total += rc;
+                            }
+                            
+            
+                            if (tiller != 0) {
+                                total += tiller;
+                            }  
+            
+                            if (dh != 0) {
+                                total += dh;
+                            }
+                            
+                            if (fm != 0) {
+                                total += fm;
+                            }
+                            
+                            if (ph != 0) {
+                                total += ph;
+                            }
+            
+                            if (poly != 0) {
+                                total += poly;
+                            }
+            
+                            if (de != 0) {
+                                total += de;
+                            }
+            
+                            if (finish != 0) {
+                                total += finish;
+                            }
+            
+                            if (c != 0) {
+                                total += c;
+                            }
+                            
+            
+                            var formattedPrice = new Intl.NumberFormat('en-US', {
+                                style: 'currency',
+                                currency: 'USD',
+                                maximumFractionDigits: 0
+                            }).format(total);
+            
+                            console.log(formattedPrice);
+            
+                            document.getElementById("price").append(formattedPrice);
+                            document.getElementById("priceInput").value = formattedPrice;
+                        </script>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

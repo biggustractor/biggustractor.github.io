@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/*!
+ * Base CSS file for Big Gus Tractor and Equipment
+ * Branding and more.
+ */
+
+/* Gotham Font */
+@font-face {
+    font-family: 'Gotham';
+    src: url(fonts/Gotham-Light.woff),
+         url(fonts/Gotham-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root,
+[data-bs-theme=light] {
+    --bgte-gray: #4b4c4e;
+    --bgte-red: #d13741;
+    --bgte-white: #ffffff;
+    --bgte-light-gray: #e1e1e3;
+}
+
+[data-bs-theme=dark] {
+    --bgte-gray: #4b4c4e;
+    --bgte-red: #d13741;
+    --bgte-white: #ffffff;
+    --bgte-light-gray: #e1e1e3;
+}
+
+a:hover {
+    color: var(--bgte-red);
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Gotham';
+}
+
+.bg-types-background {
+    background: url(images/biggustractor-bg-types);
+}
+
+.bgte-gray-background {
+    background: var(--bgte-gray);
+}
+
+.align-center {
+    align-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bgte-navbar {
+    width: 100%; 
+    text-align: center; 
+    top: 0px;
+    position: sticky;
+    margin: 0px 0px 0px 0px;
+}
+
+.sm-shadow {
+    box-shadow:  0 0.125rem 0.25rem var(--bs-gray-800) !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.no-bold {
+    font-weight: normal;
+}
+
+.red-gradient {
+    background: -webkit-linear-gradient(#d13741, #39080c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgba(0, 0, 0, 0.15) 2px 2px;
+}
+
+.red-gradient-background {
+    color: black;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.15) 5px 5px;
+}
+
+.red-font {
+    color: var(--bgte-red);
+}
+
+.white-font {
+    color: var(--bgte-white);
+}
+
+.black-font {
+    color: black;
+}
+
+.white-stroke {
+    -webkit-text-stroke: #ffffff 1px;;
+}
+
+.text-shadow {
+    text-shadow: rgba(0, 0, 0, 0.15) 5px 5px;
+}
+
+.center {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.bottom {
+    position: absolute;
+    z-index: 1;
+}
+
+.middle {
+    position: absolute;
+    z-index: 2;
+}
+
+.top {
+    position: absolute;
+    z-index: 3;
+}
+
+.section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 100%;
+    box-shadow:  0 0.125rem 0.25rem var(--bs-gray-800),  0 -0.125rem 0.25rem var(--bs-gray-800);
+}
+
+.sm-section {
+    background-color: var(--bgte-gray);
+    position: absolute;
+    margin-top: 50px;
+    min-height: 100px;
+    width: 100%;
+    box-shadow: 0 0.125rem 0.25rem var(--bs-gray-800), 0 -0.125rem 0.25rem var(--bs-gray-800);
+}
+
+.abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 100%;
+}
+
+.bgte-button {
+    background: var(--bgte-red);
+    height: 80px;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 325px;;
+}
+
+.tractor-pic {
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+
+.overlay {
+    box-shadow: 0px 0px 1px  rgba (0, 0, 0, 0.5);
+}
+
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.black-text {
+    color: black;
+}
+
+.sm-font {
+    font-size: 24px;
+}
+
+.get-started {
+    color: white;
+    fill: white;
+    top: 70%;
+    position: absolute;
+}
+
+.get-started:hover {
+    color: var(--bgte-red);
+    fill: var(--bgte-red);
+}
+
+.right-arrow {
+    height: 50px;
+}
+
+.gotham {
+    font-family: 'Gotham';
+}
+
+.bgte-footer {
+    width: 100%; 
+    text-align: center; 
+    bottom: 100;
+    position: sticky;
+    margin: 0px 0px 0px 0px;
+}
+
+.footer {
+    bottom: 0px;
+    position: sticky;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.break {
+    height: 50px;
+}
+
+.body-section {
+    display: flex;
+    background-color: var(--bgte-gray);
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.tractor-image {
+    max-width: 100%;
+}
+
+.no-background-section {
+    margin-top: 200px;
+}
+
+.text-area {
+    width: 75%;
+}
+
+.submit {
+    background-color: #4CBB17;
+    color: white;
+    box-shadow: none;
+    font-size: 1.25rem;
+    border-width: 0px;
+    border-radius: 5px;
+    max-width: 100%;
+    text-wrap: auto;
+}
+
+.submit:hover {
+    color: var(--bgte-gray);
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Build Your Tractor Package!</title>
+        <link rel="icon" href="static/images/favicon.ico" />
+        <link rel="stylesheet" href="static/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="static/stylesheets/base.css">
+    </head>
+    <div class="bgte-navbar bgte-gray-background sticky-top sm-shadow">
+        <a href="index.html">
+            <img src="static/logos/BGTE-Logo-Horizontal-Stroke.png" style="height: 100px;">
+        </a>
+    </div>
+    <body style="background: url('/static/images/biggustractor-bg-types.jpg')">
+        <div class="sm-section center">
+            <h1 class="white-font">Add a Rotary Cutter</h1>
+        </div>
+        <div class="break" style="margin-top: 60px;"></div>
+        <div class="body-section">
+            <div id="container" class="container col-xxl-8 px-4 py-5">
+                <script>
+                    const name = localStorage.getItem("name");
+                    const url = "tiller.html";
+                    const container = document.getElementById("container");
+                    
+                    if (name == '1120 HST' || name =='1120 HST Cab' || name =='1123 HST' || name == '1123 HST Cab' || name == '1126 HST' || name == '1126 HST Cab' || name == '2123 HST' || name == '2126 HST' || name == '2126 HST Cab')
+                        {
+                            row1 = document.createElement("div");
+                            row1.className = "row flex-lg-row align-items-center g-5 py-5";
+                            header1 = document.createElement("h1");
+                            header1.className = "white-font mb-0 mt-0";
+                            header1.innerHTML = "4' Rotary Cutter";
+                            row1.appendChild(header1);
+                            link1 = document.createElement("a");
+                            link1.href = url;
+                            link1.className = "mb-0 mt-4";
+                            button1 = document.createElement("button");
+                            button1.type = "button";
+                            button1.className = "btn btm-lg gotham white-font";
+                            button1.innerHTML = "Add This to My Package";
+                            link1.appendChild(button1);
+                            link1.addEventListener('click', function(){
+                               localStorage.setItem("rotaryCutter", true);
+                                localStorage.setItem("rotaryCutterPrice", 1899);
+                            });
+                            row1.appendChild(link1);
+                            
+                            container.appendChild(row1);
+                        }
+                    else if (name == '1626 S' || name == '1626 HST' || name == '1635 S' || name == '1635 HST' || name == '1635 HST Cab' || name == '1640 S' || name == '1640 HST' || name == '1640 HST Cab')
+                        {
+                            row1 = document.createElement("div");
+                            row1.className = "row flex-lg-row align-items-center g-5 py-5";
+                            
+                            col1 = document.createElement("div");
+                            col1.className = "col-lg-6";
+                            header1 = document.createElement("h1");
+                            header1.className = "white-font";
+                            header1.innerHTML = "4' Rotary Cutter";
+                            col1.appendChild(header1);
+                            link1 = document.createElement("a");
+                            link1.href = url;
+                            button1 = document.createElement("button");
+                            button1.type = "button";
+                            button1.className = "btn btm-lg gotham white-font";
+                            button1.innerHTML = "Add This to My Package";
+                            link1.appendChild(button1);
+                            link1.addEventListener('click', function(){
+                               localStorage.setItem("rotaryCutter", true);
+                                localStorage.setItem("rotaryCutterPrice", 1899);
+                            });
+                            col1.appendChild(link1);
+                            row1.appendChild(col1);
+                            
+                            col2 = document.createElement("div");
+                            col2.className = "col-lg-6";
+                            header2 = document.createElement("h1");
+                            header2.className = "white-font";
+                            header2.innerHTML = "5' Rotary Cutter";
+                            col2.appendChild(header2);
+                            link2 = document.createElement("a");
+                            link2.href = url;
+                            button2 = document.createElement("button");
+                            button2.type = "button";
+                            button2.className = "btn btm-lg gotham white-font";
+                            button2.innerHTML = "Add This to My Package";
+                            link2.appendChild(button2);
+                            link2.addEventListener('click', function(){
+                               localStorage.setItem("rotaryCutter", true);
+                                localStorage.setItem("rotaryCutterPrice", 2399);
+                            });
+                            col2.appendChild(link2);
+                            row1.appendChild(col2);
+                            
+                            container.appendChild(row1);
+                        }
+                    else if (name == '4540 4WD' || name == '4550 4WD' || name == '5145 4WD')
+                        {
+                            row1 = document.createElement("row");
+                            row1.className = "row flex-lg-row align-items-center g-5 py-5";
+                            col1 = document.createElement("div");
+                            col1.className = "col-lg-6";
+                            header1 = document.createElement("h1");
+                            header1.className = "white-font";
+                            header1.innerHTML = "4' Rotary Cutter";
+                            col1.appendChild(header1);
+                            link1 = document.createElement("a");
+                            link1.href = url;
+                            button1 = document.createElement("button");
+                            button1.type = "button";
+                            button1.className = "btn btm-lg gotham white-font";
+                            button1.innerHTML = "Add This to My Package";
+                            link1.appendChild(button1);
+                            link1.addEventListener('click', function(){
+                               localStorage.setItem("rotaryCutter", true);
+                                localStorage.setItem("rotaryCutterPrice", 1899);
+                            });
+                            col1.appendChild(link1);
+                            row1.appendChild(col1);
+                            
+                            col2 = document.createElement("div");
+                            col2.className = "col-lg-6";
+                            header2 = document.createElement("h1");
+                            header2.className = "white-font";
+                            header2.innerHTML = "5' Rotary Cutter";
+                            col2.appendChild(header2);
+                            link2 = document.createElement("a");
+                            link2.href = url;
+                            button2 = document.createElement("button");
+                            button2.type = "button";
+                            button2.className = "btn btm-lg gotham white-font";
+                            button2.innerHTML = "Add This to My Package";
+                            link2.appendChild(button2);
+                            link2.addEventListener('click', function(){
+                               localStorage.setItem("rotaryCutter", true);
+                                localStorage.setItem("rotaryCutterPrice", 2399);
+                            });
+                            col2.appendChild(link2);
+                            row1.appendChild(col2);
+                            
+                            container.appendChild(row1);
+                            
+                            row2 = document.createElement("div");
+                            row2.className = "row flex-lg-row align-items-center g-5 py-5 mt-4";
+                            header3 = document.createElement("h1");
+                            header3.className = "white-font mb-0 mt-0";
+                            header3.innerHTML = "6' Rotary Cutter";
+                            row2.appendChild(header3);
+                            link3 = document.createElement("a");
+                            link3.href = url;
+                            link3.className = "mb-0 mt-4";
+                            button3 = document.createElement("button");
+                            button3.type = "button";
+                            button3.className = "btn btm-lg gotham white-font";
+                            button3.innerHTML = "Add This to My Package";
+                            link3.appendChild(button3);
+                            link3.addEventListener('click', function(){
+                               localStorage.setItem("rotaryCutter", true);
+                                localStorage.setItem("rotaryCutterPrice", 2699);
+                            });
+                            row2.appendChild(link3);
+                            container.appendChild(row2);
+                        }
+                    else
+                        {
+                            row1 = document.createElement("row");
+                            row1.className = "row flex-lg-row align-items-center g-5 py-5";
+                            col1 = document.createElement("div");
+                            col1.className = "col-lg-6";
+                            header1 = document.createElement("h1");
+                            header1.className = "white-font";
+                            header1.innerHTML = "4' Rotary Cutter";
+                            col1.appendChild(header1);
+                            link1 = document.createElement("a");
+                            link1.href = url;
+                            button1 = document.createElement("button");
+                            button1.type = "button";
+                            button1.className = "btn btm-lg gotham white-font";
+                            button1.innerHTML = "Add This to My Package";
+                            link1.appendChild(button1);
+                            link1.addEventListener('click', function(){
+                               localStorage.setItem("rotaryCutter", true);
+                                localStorage.setItem("rotaryCutterPrice", 1899);
+                            });
+                            col1.appendChild(link1);
+                            row1.appendChild(col1);
+                            
+                            col2 = document.createElement("div");
+                            col2.className = "col-lg-6";
+                            header2 = document.createElement("h1");
+                            header2.className = "white-font";
+                            header2.innerHTML = "5' Rotary Cutter";
+                            col2.appendChild(header2);
+                            link2 = document.createElement("a");
+                            link2.href = url;
+                            button2 = document.createElement("button");
+                            button2.type = "button";
+                            button2.className = "btn btm-lg gotham white-font";
+                            button2.innerHTML = "Add This to My Package";
+                            link2.appendChild(button2);
+                            link2.addEventListener('click', function(){
+                               localStorage.setItem("rotaryCutter", true);
+                                localStorage.setItem("rotaryCutterPrice", 2399);
+                            });
+                            col2.appendChild(link2);
+                            row1.appendChild(col2);
+                            
+                            container.appendChild(row1);
+                            
+                            row2 = document.createElement("div");
+                            row2.className = "row flex-lg-row align-items-center g-5 py-5 mt-4";
+                            col3 = document.createElement("div");
+                            col3.className = "col-lg-6";
+                            header3 = document.createElement("h1");
+                            header3.className = "white-font";
+                            header3.innerHTML = "6' Rotary Cutter";
+                            col3.appendChild(header3);
+                            link3 = document.createElement("a");
+                            link3.href = url;
+                            link3.className = "mb-0 mt-4";
+                            button3 = document.createElement("button");
+                            button3.type = "button";
+                            button3.className = "btn btm-lg gotham white-font";
+                            button3.innerHTML = "Add This to My Package";
+                            link3.appendChild(button3);
+                            link3.addEventListener('click', function(){
+                               localStorage.setItem("rotaryCutter", true);
+                                localStorage.setItem("rotaryCutterPrice", 2699);
+                            });
+                            col3.appendChild(link3);
+                            row2.appendChild(col3);
+                            
+                            col4 = document.createElement("div");
+                            col4.className = "col-lg-6";
+                            header4 = document.createElement("h1");
+                            header4.className = "white-font";
+                            header4.innerHTML = "7' Rotary Cutter";
+                            col4.appendChild(header4);
+                            link4 = document.createElement("a");
+                            link4.href = url;
+                            link4.className = "mb-0 mt-4";
+                            button4 = document.createElement("button");
+                            button4.type = "button";
+                            button4.className = "btn btm-lg gotham white-font";
+                            button4.innerHTML = "Add This to My Package";
+                            link4.appendChild(button4);
+                            link4.addEventListener('click', function(){
+                               localStorage.setItem("rotaryCutter", true);
+                                localStorage.setItem("rotaryCutterPrice", 5999);
+                            });
+                            col4.appendChild(link4);
+                            row2.appendChild(col4);
+                            
+                            container.appendChild(row2);
+                        }
+                </script>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <a id="no" href="tiller.html" class="no-bold no-underline white-font gotham"><h2>No Rotary Cutter</h2></a>
+                    <script>
+                        no = document.getElementById("no");
+                        no.addEventListener('click', function(){
+                               localStorage.setItem("rotaryCutter", false);
+                                localStorage.setItem("rotaryCutterPrice", 0);
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
