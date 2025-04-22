@@ -500,11 +500,21 @@
                         </div>
                         <div class="row flex-lg-row g-5 py-5 center text-center">
                             <h5 class="white-font gotham center">Any comments or trailer specifications:</h5>
-                            <textarea type="message" id="comments" name="Comments/Trailer Specifications"></textarea>
+                            <textarea class="mt-2" type="message" id="comments" name="Comments/Trailer Specifications"></textarea>
                         </div>
                         <div class="row flex-lg-row align-items-center g-5 mb-0">
                             <h1 class="white-font gotham" id="price">Price Before Package Discount: </h1>
                             <input type="hidden" name="Price Before Package Discount" id="priceInput" value="" />
+                        </div>
+                        <div class="break"></div>
+                        <div class="row flex-lg-row g-5 py-5 center text-center">
+                            <h2 class="white-font gotham mb-0">Contact Info</h2>
+                            <h5 class="white-font gotham">Name:</h5>
+                            <input class="mt-2" name="Name" required>
+                            <h5 class="white-font gotham">Email:</h5>
+                            <input type="email" name="Email" class="mt-2" required>
+                            <h5 class="white-font gotham">Phone Number:</h5>
+                            <input class="mt-2" name="Phone Number" required>
                         </div>
 
                         <input type="submit" id="submit" name="submit" value="Submit to Get Your Discounted Tractor Package Price" class="mt-5 submit gotham" />
